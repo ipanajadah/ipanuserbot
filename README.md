@@ -1,48 +1,33 @@
-## Vii Userbot
+
 ```
 apt update && apt upgrade -y
 ```
 ```
-git clone https://github.com/aleeesio/ubot
+git clone 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@github.com/ipan1234/ubot
 ```
 ```
 cd ubot && screen -S ubot
 ```
 ```
-apt install ffmpeg -y
+bash installnode.sh && apt install python3.10-venv
 ```
 ```
-bash installnode.sh
-```
-```
-apt install python3.10-venv
-```
-```
-python3 -m venv venv && source venv/bin/activate
+python3 -m venv ubot && source ubot/bin/activate
 ```
 ```
 pip3 install -r requirements.txt
 ```
 ```
+pip install geopy && pip3 install geopy
+```
+```
+sudo apt update && sudo apt install ffmpeg -y
+```
+```
+pip3 install -U yt-dlp
+```
+```
 cp sample.env .env && nano .env
-```
-```
-screen -S ubot
-```
-```
-python3 -m PyroUbot
-```
-```
----------- Menghidupan jika ubot mati -------------
-```
-```
-cd ubot && screen -S ubot
-```
-```
-python3 -m venv venv && source venv/bin/activate
-```
-```
-screen -S ubot
 ```
 ```
 python3 -m PyroUbot
