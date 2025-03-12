@@ -24,6 +24,7 @@ __HELP__ = """
 
 @PY.BOT("prem")
 @PY.SELLER
+@PY.ADMIN
 async def _(client, message):
     user_id, get_bulan = await extract_user_and_reason(message)
     msg = await message.reply("memproses...")
