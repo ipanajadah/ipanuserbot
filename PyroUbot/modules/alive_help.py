@@ -67,7 +67,7 @@ async def _(client, inline_query):
 ᚗ peer_users: {users} users
 ᚗ peer_group: {group} group
 ᚗ start_uptime: {uptime}</blockquote>
-        <blockquote><b>ᣃ࿈ ᴜsᴇʀʙᴏᴛ alfsefy ࿈ᣄ</b></blockquote>
+        <blockquote><b>ᣃ࿈ ᴜᴜsᴇʀʙᴏᴛ ɪᴘᴀɴ ࿈ᣄ</b></blockquote>
 """
             await client.answer_inline_query(
                 inline_query.id,
@@ -158,7 +158,7 @@ async def user_help_inline(client, inline_query):
     SH = await ubot.get_prefix(inline_query.from_user.id)
     msg = f"""<blockquote><b>𝗛 𝗘 𝗟 𝗣 𝗠 𝗘 𝗡 𝗨</b>
 <b> ∘ ᴜsᴇʀ: <a href=tg://user?id={inline_query.from_user.id}>{inline_query.from_user.first_name} {inline_query.from_user.last_name or ''}</a></b>
-<b> ∘ ᴏᴡɴᴇʀ: @Zzyfxxyy</b>
+<b> ∘ ᴏᴡɴᴇʀ: @IPAN9Q</b>
 <b> ∘ ᴘʟᴜɢɪɴs: {len(HELP_COMMANDS)}</b>
 <b> ∘ ᴘʀᴇꜰɪxᴇs: {' '.join(SH)}</b></blockquote>"""
     results = [InlineQueryResultArticle(
@@ -187,7 +187,7 @@ async def help_callback(client, callback_query):
     SH = await ubot.get_prefix(callback_query.from_user.id)
     top_text = f"""<blockquote><b>𝗛 𝗘 𝗟 𝗣 𝗠 𝗘 𝗡 𝗨</b>
 <b> ∘ ᴜsᴇʀ: <a href=tg://user?id={callback_query.from_user.id}>{callback_query.from_user.first_name} {callback_query.from_user.last_name or ''}</a></b>
-<b> ∘ ᴏᴡɴᴇʀ: @Zzyfxxyy</b>
+<b> ∘ ᴏᴡɴᴇʀ: @IPAN9Q</b>
 <b> ∘ ᴘʟᴜɢɪɴs: {len(HELP_COMMANDS)}</b>
 <b> ∘ ᴘʀᴇꜰɪxᴇs: {' '.join(SH)}</b></blockquote>"""
 
@@ -197,7 +197,7 @@ async def help_callback(client, callback_query):
         button = [[InlineKeyboardButton("♅ ʙᴀᴄᴋ ♅", callback_data="help_back")]]
         await callback_query.edit_message_text(
             text=text 
-            + '\n<u><b>❕USERBOT 15K/BULAN BY @Zzyfxxyy</b></u>',
+            + '\n<u><b>❕USERBOT 15K/BULAN BY @IPAN9Q</b></u>',
             reply_markup=InlineKeyboardMarkup(button),
             disable_web_page_preview=True,
         )
