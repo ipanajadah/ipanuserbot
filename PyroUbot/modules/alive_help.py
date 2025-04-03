@@ -67,7 +67,7 @@ async def _(client, inline_query):
 ᚗ peer_users: {users} users
 ᚗ peer_group: {group} group
 ᚗ start_uptime: {uptime}</blockquote>
-        <blockquote><b>ᣃ࿈ ᴜsᴇʀʙᴏᴛ ɪᴘᴀɴ ࿈ᣄ</b></blockquote>
+        <blockquote><b>ᣃ࿈ ᴜᴜsᴇʀʙᴏᴛ ɪᴘᴀɴ ࿈ᣄ</b></blockquote>
 """
             await client.answer_inline_query(
                 inline_query.id,
@@ -100,14 +100,14 @@ async def _(client, callback_query):
 @PY.BOT("anu")
 @PY.ADMIN
 async def _(client, message):
-    buttons = BTN.BOT_MENU(message)
-    sh = await message.reply("menu information", reply_markup=InlineKeyboardMarkup(buttons))
+    buttons = BTN.BOT_HELP(message)
+    sh = await message.reply("help menu information", reply_markup=InlineKeyboardMarkup(buttons))
     
 
 @PY.CALLBACK("balik")
 async def _(client, callback_query):
-    buttons = BTN.BOT_MENU(callback_query)
-    sh = await callback_query.message.edit("MENU information", reply_markup=InlineKeyboardMarkup(buttons))
+    buttons = BTN.BOT_HELP(callback_query)
+    sh = await callback_query.message.edit("help menu information", reply_markup=InlineKeyboardMarkup(buttons))
 
 @PY.CALLBACK("reboot")
 async def _(client, callback_query):
@@ -130,20 +130,20 @@ async def _(client, callback_query):
     os.execl(sys.executable, sys.executable, "-m", "userbot-ᴘʀᴇᴍ")
 
 
-@PY.UBOT("menu")
+@PY.UBOT("help")
 async def user_help(client, message):
     if not get_arg(message):
         try:
-            x = await client.get_inline_bot_results(bot.me.username, "user_menu")
+            x = await client.get_inline_bot_results(bot.me.username, "user_help")
             await message.reply_inline_bot_result(x.query_id, x.results[0].id)
         except Exception as error:
             await message.reply(error)
     else:
         module = (get_arg(message))
-        if get_arg(message) in MENJ_COMMANDS:
+        if get_arg(message) in HELP_COMMANDS:
             prefix = await ubot.get_prefix(client.me.id)
             await message.reply(
-                MENU_COMMANDS[get_arg(message)].__MENU__.format(
+                HELP_COMMANDS[get_arg(message)].__HELP__.format(
                     next((p) for p in prefix)
                 ),
                 quote=True,
@@ -153,17 +153,17 @@ async def user_help(client, message):
                 f"<b>⌭ No module found <code>{module}</code></b>"
             )
 
-@PY.INLINE("^user_menu")
+@PY.INLINE("^user_help")
 async def user_help_inline(client, inline_query):
     SH = await ubot.get_prefix(inline_query.from_user.id)
-    msg = f"""<blockquote><b>𝗠 𝗘 𝗡 𝗨 𝗨 𝗦 𝗘 𝗥 𝗕 𝗢 𝗧</b>
+    msg = f"""<blockquote><b>𝗛 𝗘 𝗟 𝗣 𝗠 𝗘 𝗡 𝗨</b>
 <b> ∘ ᴜsᴇʀ: <a href=tg://user?id={inline_query.from_user.id}>{inline_query.from_user.first_name} {inline_query.from_user.last_name or ''}</a></b>
 <b> ∘ ᴏᴡɴᴇʀ: @IPAN9Q</b>
 <b> ∘ ᴘʟᴜɢɪɴs: {len(HELP_COMMANDS)}</b>
 <b> ∘ ᴘʀᴇꜰɪxᴇs: {' '.join(SH)}</b></blockquote>"""
     results = [InlineQueryResultArticle(
-        title="Menu Menu!",
-        reply_markup=InlineKeyboardMarkup(paginate_modules(0, MENU_COMMANDS, "menu")),
+        title="Help Menu!",
+        reply_markup=InlineKeyboardMarkup(paginate_modules(0, HELP_COMMANDS, "help")),
         input_message_content=InputTextMessageContent(msg),
     )]
     await client.answer_inline_query(inline_query.id, cache_time=60, results=results)
@@ -177,15 +177,15 @@ async def close_usernya(client, callback_query):
                 unPacked.chat_id, unPacked.message_id
             )
 
-@PY.CALLBACK("menu_(.*?)")
+@PY.CALLBACK("help_(.*?)")
 async def help_callback(client, callback_query):
-    mod_match = re.match(r"menu_module\((.+?)\)", callback_query.data)
-    prev_match = re.match(r"menu_prev\((.+?)\)", callback_query.data)
-    next_match = re.match(r"menu_next\((.+?)\)", callback_query.data)
-    tutup_match = re.match(r"menu_tutup\((.+?)\)", callback_query.data)
-    back_match = re.match(r"menu_back", callback_query.data)
+    mod_match = re.match(r"help_module\((.+?)\)", callback_query.data)
+    prev_match = re.match(r"help_prev\((.+?)\)", callback_query.data)
+    next_match = re.match(r"help_next\((.+?)\)", callback_query.data)
+    tutup_match = re.match(r"help_tutup\((.+?)\)", callback_query.data)
+    back_match = re.match(r"help_back", callback_query.data)
     SH = await ubot.get_prefix(callback_query.from_user.id)
-    top_text = f"""<blockquote><b>𝗠 𝗘 𝗡 𝗨 𝗨 𝗦 𝗘 𝗥 𝗕 𝗢 𝗧</b>
+    top_text = f"""<blockquote><b>𝗛 𝗘 𝗟 𝗣 𝗠 𝗘 𝗡 𝗨</b>
 <b> ∘ ᴜsᴇʀ: <a href=tg://user?id={callback_query.from_user.id}>{callback_query.from_user.first_name} {callback_query.from_user.last_name or ''}</a></b>
 <b> ∘ ᴏᴡɴᴇʀ: @IPAN9Q</b>
 <b> ∘ ᴘʟᴜɢɪɴs: {len(HELP_COMMANDS)}</b>
@@ -193,8 +193,8 @@ async def help_callback(client, callback_query):
 
     if mod_match:
         module = (mod_match.group(1)).replace(" ", "_")
-        text = MENU_COMMANDS[module].__MENU__.format(next((p) for p in SH))
-        button = [[InlineKeyboardButton("♅ ʙᴀᴄᴋ ♅", callback_data="menu_back")]]
+        text = HELP_COMMANDS[module].__HELP__.format(next((p) for p in SH))
+        button = [[InlineKeyboardButton("♅ ʙᴀᴄᴋ ♅", callback_data="help_back")]]
         await callback_query.edit_message_text(
             text=text 
             + '\n<u><b>❕USERBOT 10K/BULAN BY @IPAN9Q</b></u>',
@@ -205,19 +205,19 @@ async def help_callback(client, callback_query):
         curr_page = int(prev_match.group(1))
         await callback_query.edit_message_text(
             top_text,
-            reply_markup=InlineKeyboardMarkup(paginate_modules(curr_page - 1, MENU_COMMANDS, "menu")),
+            reply_markup=InlineKeyboardMarkup(paginate_modules(curr_page - 1, HELP_COMMANDS, "help")),
             disable_web_page_preview=True,
         )
     elif next_match:
         next_page = int(next_match.group(1))
         await callback_query.edit_message_text(
             text=top_text,
-            reply_markup=InlineKeyboardMarkup(paginate_modules(next_page + 1, MENU_COMMANDS, "menu")),
+            reply_markup=InlineKeyboardMarkup(paginate_modules(next_page + 1, HELP_COMMANDS, "help")),
             disable_web_page_preview=True,
         )
     elif back_match:
         await callback_query.edit_message_text(
             text=top_text,
-            reply_markup=InlineKeyboardMarkup(paginate_modules(0, MENU_COMMANDS, "menu")),
+            reply_markup=InlineKeyboardMarkup(paginate_modules(0, HELP_COMMANDS, "help")),
             disable_web_page_preview=True,
         )
