@@ -1,6 +1,5 @@
 import os
-import requests
-from pyrogram import Client, filters
+import request
 from PyroUbot import PY
 
 __MODULE__ = "Upload MediaFire"
