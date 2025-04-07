@@ -21,7 +21,7 @@ __HELP__ = """
 
 Total Methods: 5
 Time Limit: 300
-My Owner: @alfsefyy
+My Owner: @IPANNEWERA
 
 List Methods
 -floods
