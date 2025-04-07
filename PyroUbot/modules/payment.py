@@ -25,7 +25,6 @@ async def _(client, callback_query):
 
 DANA : ||085750107505||
 GOPAY : 085750107505
-QRIS : https://files.catbox.moe/lfi8es.jpg
 <b>💬 sɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍᴋᴀɴ ʙᴜᴋᴛɪ sᴄʀᴇᴇɴsʜᴏᴛ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ: {full_name}</b></blockquote>
 """,
             timeout=300,
