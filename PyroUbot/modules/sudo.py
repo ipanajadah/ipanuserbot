@@ -2,13 +2,13 @@ __MODULE__ = "sudo"
 __HELP__ = """
 <b>📚bantuan untuk sudo
 
-<blockquote>•🚦 perintah: {0}addsudo [reply/username/id]
+<blockquote>•🚦 perintah: `{0}addsudo` [reply/username/id]
 • 🦠penjelasan: tambah pengguna sudo.</blockquote>
 
-<blockquote>• 🚦perintah: {0}delsudo [reply/username/id]
+<blockquote>• 🚦perintah: `{0}delsudo` [reply/username/id]
 • 🦠penjelasan: hapus pengguna sudo.</blockquote>
 
-<blockquote>•🚦 perintah: {0}sudolist
+<blockquote>•🚦 perintah: `{0}sudolist`
 • 🦠penjelasan: cek pengguna sudo.</blockquote></b>
 """
 
