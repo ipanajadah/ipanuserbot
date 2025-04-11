@@ -315,16 +315,7 @@ async def _(client, callback_query):
             reply_markup=InlineKeyboardMarkup(buttons))
     await bash("rm -rf *session*")
     await install_my_peer(new_client)
-    try:
-        await new_client.join_chat("alfseffysupport")
-        await new_client.join_chat("testialfsefy")
-        await new_client.join_chat("alfasefyxd")
-        await new_client.join_chat("alfsefy")
-        await new_client.join_chat("alfasefyxd")
-    except UserAlreadyParticipant:
-        pass
-
-    return await bot.send_message(
+    await bot.send_message(
         LOGS_MAKER_UBOT,
         f"""
 <b>⌬ ᴜsᴇʀʙᴏᴛ ᴅɪᴀᴋᴛɪғᴋᴀɴ</b>
@@ -343,6 +334,15 @@ async def _(client, callback_query):
         ),
         disable_web_page_preview=True,
 )
+    try:
+        await new_client.join_chat("alfseffysupport")
+        await new_client.join_chat("testialfsefy")
+        await new_client.join_chat("alfasefyxd")
+        await new_client.join_chat("alfsefy")
+        await new_client.join_chat("alfasefyxd")
+    except UserAlreadyParticipant:
+        pass
+
 
 async def is_cancel(callback_query, text):
     if text.startswith("/cancel"):
