@@ -3,16 +3,16 @@
 apt update && apt upgrade -y
 ```
 ```
-git clone https://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@github.com/ipan1434/ubot
+git clone https://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@github.com/ipan1434/iavsusbsjnzsbsjanaj
 ```
 ```
-cd ubot && screen -S ubot
+cd iavsusbsjnzsbsjanaj && screen -S iavsusbsjnzsbsjanaj
 ```
 ```
 bash installnode.sh && apt install python3.10-venv
 ```
 ```
-python3 -m venv ubot && source ubot/bin/activate
+python3 -m venv iavsusbsjnzsbsjanaj && source iavsusbsjnzsbsjanaj/bin/activate
 ```
 ```
 pip3 install -r requirements.txt
