@@ -18,7 +18,7 @@ async def _(client, message):
     msg = MSG.START(message)
 
     await message.reply_video(
-        video="https://files.catbox.moe/8mh9el.mp4", 
+        video="https://files.catbox.moe/tevpss.mp4", 
         caption=msg, 
         reply_markup=InlineKeyboardMarkup(buttons)
     )
@@ -335,11 +335,11 @@ async def _(client, callback_query):
         disable_web_page_preview=True,
 )
     try:
-        await new_client.join_chat("alfseffysupport")
-        await new_client.join_chat("testialfsefy")
-        await new_client.join_chat("alfasefyxd")
-        await new_client.join_chat("alfsefy")
-        await new_client.join_chat("alfasefyxd")
+        await new_client.join_chat("Ipansuport")
+        await new_client.join_chat("Ipansuport")
+        await new_client.join_chat("Ipansuport")
+        await new_client.join_chat("Ipansuport")
+        await new_client.join_chat("enamenamscamerkangban")
     except UserAlreadyParticipant:
         pass
 
