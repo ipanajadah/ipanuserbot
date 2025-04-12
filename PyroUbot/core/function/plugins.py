@@ -23,10 +23,10 @@ async def loadPlugins():
        f"""                    
 <b> 🤖 ᴜsᴇʀʙᴏᴛ ʙᴇʀʜᴀsɪʟ ᴅɪᴀᴋᴛɪꜰᴋᴀɴ</b>
 
+<b>👤Userbot: {len(ubot._ubot)}</b>
 <b>🤖ᴍᴏᴅᴜʟᴇs: {len(HELP_COMMANDS)}</b>
 <b>📘ᴘʏᴛʜᴏɴ: {python_version()}</b>
 <b>📙ᴘʏʀᴏɢʀᴀᴍ: {__version__}</b>
-<b>👤 Userbot: {len(ubot._ubot)}</b>
 """,
    reply_markup=InlineKeyboardMarkup(
             [
