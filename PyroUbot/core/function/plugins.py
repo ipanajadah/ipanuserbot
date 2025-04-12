@@ -21,18 +21,17 @@ async def loadPlugins():
     await bot.send_message(
         LOGS_MAKER_UBOT, 
        f"""                    
-<b>᪣ ᴜsᴇʀʙᴏᴛ ʙᴇʀʜᴀsɪʟ ᴅɪᴀᴋᴛɪꜰᴋᴀɴ</b>
+<b> 🤖 ᴜsᴇʀʙᴏᴛ ʙᴇʀʜᴀsɪʟ ᴅɪᴀᴋᴛɪꜰᴋᴀɴ</b>
 
-<b>⟣ ᴍᴏᴅᴜʟᴇs: {len(HELP_COMMANDS)}</b>
-<b>⟣ ᴘʏᴛʜᴏɴ: {python_version()}</b>
-<b>⟣ ᴘʏʀᴏɢʀᴀᴍ: {__version__}</b>
-
-<b>⟣ ᴜsᴇʀʙᴏᴛ: {len(ubot._ubot)}</b>
+<b>🤖ᴍᴏᴅᴜʟᴇs: {len(HELP_COMMANDS)}</b>
+<b>📘ᴘʏᴛʜᴏɴ: {python_version()}</b>
+<b>📙ᴘʏʀᴏɢʀᴀᴍ: {__version__}</b>
+<b>👤 Userbot: {len(ubot._ubot)}</b>
 """,
    reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("⳹  ʟɪꜱᴛ ᴜꜱᴇʀʙᴏᴛ ⳼", callback_data="cek_ubot"),
+                    InlineKeyboardButton("𓊈ᴘᴇɴɢɢᴜɴᴀ USERBOT𓊉", callback_data="cek_ubot"),
                 ],
             ]
         ),
