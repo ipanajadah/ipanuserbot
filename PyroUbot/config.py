@@ -7,15 +7,15 @@ MAX_BOT = int(os.getenv("MAX_BOT", "30"))
 
 DEVS = list(map(int, os.getenv("DEVS", "5937391590").split()))
 
-API_ID = int(os.getenv("API_ID", "26181769"))
+API_ID = int(os.getenv("API_ID", "27436953"))
 
-API_HASH = os.getenv("API_HASH", "4bf6bf35c4700023a2d1d5f48562f303")
+API_HASH = os.getenv("API_HASH", "f83021143420765793bebf4f50cbd969")
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "7915079265:AAFyj0V5G2n7vwZ0ZyhlYuu8OOs-Do4oMTE")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8106486428:AAFbOQLe4J6BywKnYn0MlwnB3fUyt4Ug_gs")
 
 OWNER_ID = int(os.getenv("OWNER_ID", "5937391590"))
 
-BLACKLIST_CHAT = list(map(int, os.getenv("BLACKLIST_CHAT", "-1002566228411").split()))
+BLACKLIST_CHAT = list(map(int, os.getenv("BLACKLIST_CHAT", "-1002328852888").split()))
 
 RMBG_API = os.getenv("RMBG_API", "a6qxsmMJ3CsNo7HyxuKGsP1o")
 
