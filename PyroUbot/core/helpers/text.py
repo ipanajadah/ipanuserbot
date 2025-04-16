@@ -14,12 +14,12 @@ class MSG:
 
     def START(message):
         return f"""
-```halo 👋🏻  <a href=tg://user?id={message.from_user.id}>{message.from_user.first_name} {message.from_user.last_name or ''}❕
+`halo 👋🏻  <a href=tg://user?id={message.from_user.id}>{message.from_user.first_name} {message.from_user.last_name or ''}❕
 📚 {bot.me.mention} adalah bot multi client yang dapat membuat userbot dengan sangat mudah.
 
 ✨ bot ini di kembangkan oleh: @IPANNEWERA, bot ini di rancang untuk memudahkan pengguna telegram untuk mengirim pesan group&user telegram dengan instant, dan memiliki banyak fitur yang berguna lainnya.
 👉 silahkan pilih salah satu tombol di bawah ini❗
-jika ada kendala silahkan hubungi pengembang```"""
+jika ada kendala silahkan hubungi pengembang`"""
 
     def TEXT_PAYMENT(harga, total, bulan):
         return f"""
