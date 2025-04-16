@@ -21,12 +21,12 @@ async def loadPlugins():
     await bot.send_message(
         LOGS_MAKER_UBOT, 
        f"""                    
-<b> 🤖 ᴜsᴇʀʙᴏᴛ ʙᴇʀʜᴀsɪʟ ᴅɪᴀᴋᴛɪꜰᴋᴀɴ</b>
+<b> \`\`\`🤖 ᴜsᴇʀʙᴏᴛ ʙᴇʀʜᴀsɪʟ ᴅɪᴀᴋᴛɪꜰᴋᴀɴ</b>
 
 <b>👤Userbot: {len(ubot._ubot)}</b>
 <b>🤖ᴍᴏᴅᴜʟᴇs: {len(HELP_COMMANDS)}</b>
 <b>📘ᴘʏᴛʜᴏɴ: {python_version()}</b>
-<b>📙ᴘʏʀᴏɢʀᴀᴍ: {__version__}</b>
+<b>📙ᴘʏʀᴏɢʀᴀᴍ: {__version__}</b>\`\`\`
 """,
    reply_markup=InlineKeyboardMarkup(
             [
