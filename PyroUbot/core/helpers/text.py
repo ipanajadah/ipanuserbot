@@ -16,10 +16,7 @@ class MSG:
         return f"""
 <b>halo 👋🏻  <a href=tg://user?id={message.from_user.id}>{message.from_user.first_name} {message.from_user.last_name or ''}</a></b>❕
 <blockquote><b>📚 {bot.me.mention} adalah bot multi client yang dapat membuat userbot dengan sangat mudah.</b>
-<b>👤Userbot: {len(ubot._ubot)}</b>
-<b>🤖ᴍᴏᴅᴜʟᴇs: {len(HELP_COMMANDS)}</b>
-<b>📘ᴘʏᴛʜᴏɴ: {python_version()}</b>
-<b>📙ᴘʏʀᴏɢʀᴀᴍ: {version}</b>
+
 <b>✨ bot ini di kembangkan oleh: @IPANNEWERA, bot ini di rancang untuk memudahkan pengguna telegram untuk mengirim pesan group&user telegram dengan instant, dan memiliki banyak fitur yang berguna lainnya.</b></blockquote>
 <b>👉 silahkan pilih salah satu tombol di bawah ini❗</b>
 <b>- jika ada kendala silahkan hubungi pengembang.</b>"""
