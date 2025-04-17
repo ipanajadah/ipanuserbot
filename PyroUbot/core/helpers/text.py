@@ -14,15 +14,19 @@ class MSG:
 
     def START(message):
         return f"""
-</b>𝙊𝙇𝘼  <a href=tg://user?id={message.from_user.id}>{message.from_user.first_name} {message.from_user.last_name or ''}</a></b>
+𝙊𝙇𝘼  <a href=tg://user?id={message.from_user.id}>{message.from_user.first_name} {message.from_user.last_name or ''}</a></b>
  
-<blockquote><b>📚 {bot.me.mention} 𝙄𝙉𝙄 𝘼𝘿𝘼𝙇𝘼𝙃 𝘽𝙊𝙏 𝙐𝙇𝙏𝙍𝘼 𝙋𝙍𝙀𝙈</b>
+<blockquote><b>📚 {bot.me.mention} 𝙄𝙉𝙄 𝘼𝘿𝘼𝙇𝘼𝙃 𝘽𝙊𝙏 𝙐𝙇𝙏𝙍𝘼 𝙋𝙍𝙀𝙈<blockquote><b>
 
 <blockquote><b>𝙄𝙉𝙄 𝘼𝘿𝘼𝙇𝘼𝙃 𝘽𝙊𝙏 𝙈𝙐𝙇𝙏𝙄𝙁𝙐𝙉𝙂𝙎𝙄 𝙔𝘼𝙉𝙂 𝘿𝙄 𝘽𝙐𝘼𝙏 𝙊𝙇𝙀𝙃 𝙊𝙒𝙉𝙀𝙍 𝙆𝙐 𝙔𝘼𝙄𝙏𝙐 @Ipannzzzzx 
-𝙅𝙄𝙆𝘼 𝙄𝙉𝙂𝙄𝙉 𝘽𝙀𝙍𝙏𝘼𝙉𝙔𝘼² 𝘽𝙄𝙎𝘼 𝙇𝘼𝙉𝙂𝙎𝙐𝙉𝙂 𝙆𝙀 𝘾𝙃𝘼𝙏 𝙋𝙑 𝙔𝘼 𝙂𝙐𝙔𝙎</b>
+𝙅𝙄𝙆𝘼 𝙄𝙉𝙂𝙄𝙉 𝘽𝙀𝙍𝙏𝘼𝙉𝙔𝘼² 𝘽𝙄𝙎𝘼 𝙇𝘼𝙉𝙂𝙎𝙐𝙉𝙂 𝙆𝙀 𝘾𝙃𝘼𝙏 𝙋𝙑 𝙔𝘼 𝙂𝙐𝙔𝙎<blockquote><b>
 
+<b>👤ᴘᴇɴɢɢᴜɴᴀ: {len(ubot._ubot)}<blockquote><b>
+<b>🤖ᴘʟᴜɴɢɪɴs: {len(HELP_COMMANDS)}<blockquote><b>
+<b>📘ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ: {python_version()}<blockquote><b>
+<b>📙ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ: {version}<blockquote><b>
 
-<blockquote><b>𝙅𝙄𝙆𝘼 𝙄𝙉𝙂𝙄𝙉 𝙈𝙀𝙈 𝘽𝙀𝙇𝙄 𝘽𝙄𝙎𝘼 𝘾𝙇𝙄𝙆 𝘽𝙐𝙏𝙊𝙉 𝘿𝙄 𝘽𝘼𝙒𝘼𝙃 👇</b>"""
+<blockquote><b>𝙅𝙄𝙆𝘼 𝙄𝙉𝙂𝙄𝙉 𝙈𝙀𝙈 𝘽𝙀𝙇𝙄 𝘽𝙄𝙎𝘼 𝘾𝙇𝙄𝙆 𝘽𝙐𝙏𝙊𝙉 𝘿𝙄 𝘽𝘼𝙒𝘼𝙃 👇<blockquote><b>"""
 
     def TEXT_PAYMENT(harga, total, bulan):
         return f"""
