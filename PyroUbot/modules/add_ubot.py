@@ -18,7 +18,7 @@ async def _(client, message):
     msg = MSG.START(message)
 
     await message.reply_video(
-        video="https://files.catbox.moe/3n9kgw.mp4", 
+        video="https://files.catbox.moe/346rnn.mp4", 
         caption=msg, 
         reply_markup=InlineKeyboardMarkup(buttons)
     )
