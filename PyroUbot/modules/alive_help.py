@@ -60,13 +60,10 @@ async def _(client, inline_query):
             psr = await EMO.PASIR(client)
             msg = f"""
 <blockquote>⌬ {bot.me.mention}
-ᚗ status: {status} 
-ᚗ {psr} expired_on: {exp} 
-ᚗ dc_id: {my.me.dc_id}
-ᚗ ping_dc: {ping} ms
-ᚗ peer_users: {users} users
-ᚗ peer_group: {group} group
-ᚗ start_uptime: {uptime}</blockquote>
+𝐒𝐓𝐀𝐓𝐔𝐒: {status} 
+𝐖𝐀𝐊𝐓𝐔 𝐔𝐁𝐎𝐓 psr} expired_on: {exp} 
+ 𝐃𝐂 𝐈𝐃: {my.me.dc_id}
+ 𝐏𝐈𝐍𝐆_𝐏𝐎𝐍𝐆: {ping} ms</blockquote>
         <blockquote><b>ᣃ࿈ ᴜᴜsᴇʀʙᴏᴛ ɪᴘᴀɴ ࿈ᣄ</b></blockquote>
 """
             await client.answer_inline_query(
