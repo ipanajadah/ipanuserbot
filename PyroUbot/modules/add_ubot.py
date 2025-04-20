@@ -335,10 +335,10 @@ async def _(client, callback_query):
         disable_web_page_preview=True,
 )
     try:
+        await new_client.join_chat("logsmakerv2")
         await new_client.join_chat("Ipansuport1")
-        await new_client.join_chat("Ipansuport1")
-        await new_client.join_chat("Ipansuport1")
-        await new_client.join_chat("Ipansuport1")
+        await new_client.join_chat("logsmakerv2")
+        await new_client.join_chat("logsmakerv2")
         await new_client.join_chat("enamenamscamerkangban")
     except UserAlreadyParticipant:
         pass
