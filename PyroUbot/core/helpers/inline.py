@@ -142,14 +142,14 @@ class BTN:
                     InlineKeyboardButton("⦪ ᴏᴡɴᴇʀ ᴛᴇsᴛɪᴍᴏɴɪ ⦫", url="t.me/enamenamscamerkangban")
                 ],
                 [
-                    InlineKeyboardButton("⦪ 𝗕𝗨𝗔𝗧 𝗨𝗦𝗘𝗥𝗕𝗢𝗧 𝗨𝗟𝗧𝗥𝗔𝗣𝗥𝗘𝗠𝗫𝗗 ⳼", callback_data="buat_ubot"),
+                    InlineKeyboardButton("⦪ 𝗕𝗨𝗔𝗧 𝗨𝗦𝗘𝗥𝗕𝗢𝗧 𝗨𝗟𝗧𝗥𝗔𝗣𝗥𝗘𝗠 ⳼", callback_data="buat_ubot"),
                     InlineKeyboardButton("⦪ 𝗠𝗘𝗡𝗨 𝗛𝗘𝗟𝗣 ⦫", callback_data="help_back")
                 ],
                 [InlineKeyboardButton("⦪ 𝗕𝗔𝗡𝗧𝗨𝗔𝗡 ⦫", callback_data="support")]
             ]
         else:
             button = [
-                [InlineKeyboardButton("⦪ 𝗕𝗨𝗔𝗧 𝗨𝗦𝗘𝗥𝗕𝗢𝗧 𝗨𝗟𝗧𝗥𝗔𝗣𝗥𝗘𝗠𝗫𝗗⳼", callback_data="bahan")],
+                [InlineKeyboardButton("⦪ 𝗕𝗨𝗔𝗧 𝗨𝗦𝗘𝗥𝗕𝗢𝗧 𝗨𝗟𝗧𝗥𝗔𝗣𝗥𝗘𝗠 ⳼", callback_data="bahan")],
                 [
                     InlineKeyboardButton("⦪ 𝗚𝗜𝗧𝗧𝗣𝗨𝗟𝗟 𝗨𝗦𝗘𝗥𝗕𝗢𝗧", callback_data="cb_gitpull"),
                     InlineKeyboardButton("⦪ 𝗥𝗘𝗦𝗧𝗔𝗥𝗧 𝗨𝗦𝗘𝗥𝗕𝗢𝗧 ", callback_data="cb_restart")
