@@ -10,8 +10,8 @@ from pyrogram.raw import functions
 from PyroUbot import *
 
 
-@PY.BOT("start")
-@PY.START
+@PY.BOT("menu")
+@PY.MENU
 @PY.PRIVATE
 async def _(client, message):
     buttons = BTN.START(message)
