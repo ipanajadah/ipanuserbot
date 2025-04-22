@@ -10,8 +10,8 @@ from pyrogram.raw import functions
 from PyroUbot import *
 
 
-@PY.BOT("menu")
-@PY.MENU
+@PY.BOT("start")
+@PY.START
 @PY.PRIVATE
 async def _(client, message):
     buttons = BTN.START(message)
@@ -476,7 +476,7 @@ async def _(client, callback_query):
                 reply_markup=InlineKeyboardMarkup(BTN.EXP_UBOT()),
             )
 
-    
+
 @PY.CALLBACK("^(p_ub|n_ub)")
 async def _(client, callback_query):
     query = callback_query.data.split()
