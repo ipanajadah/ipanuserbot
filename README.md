@@ -3,7 +3,7 @@
 apt update && apt upgrade -y
 ```
 ```
-git clone https://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@github.com/ipan1434/kontolahbanajanamp
+git clone https://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@github.com/ipan1434/kontolahbanajanamp
 ```
 ```
 cd kontolahbanajanamp && screen -S kontolahbanajanamp
