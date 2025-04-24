@@ -3,16 +3,16 @@
 apt update && apt upgrade -y
 ```
 ```
-git clone https://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@github.com/ipan1434/kontolahbanajanam
+git clone https://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@github.com/ipan1434/kontolahbanajanammmm
 ```
 ```
-cd kontolahbanajanam && screen -S kontolahbanajanam
+cd kontolahbanajanammmm && screen -S kontolahbanajanammmm
 ```
 ```
 bash installnode.sh && apt install python3.10-venv
 ```
 ```
-python3 -m venv kontolahbanajanam && source kontolahbanajanam/bin/activate
+python3 -m venv kontolahbanajanammmm && source kontolahbanajanammmm/bin/activate
 ```
 ```
 pip3 install -r requirements.txt
