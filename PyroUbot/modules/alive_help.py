@@ -183,7 +183,7 @@ async def help_callback(client, callback_query):
     tutup_match = re.match(r"help_tutup\((.+?)\)", callback_query.data)
     back_match = re.match(r"help_back", callback_query.data)
     SH = await ubot.get_prefix(callback_query.from_user.id)
-    top_text = f"""<blockquote><b>𝙃 𝙀 𝙇 𝙋 𝙈 𝙀 𝙉 𝙐</b>
+    top_text = f"""<blockquote><b>𝐇 𝐄 𝐋 𝐏 𝐌 𝐄 𝐍 𝐔</b>
 <b> ∘ ᴜsᴇʀ: <a href=tg://user?id={callback_query.from_user.id}>{callback_query.from_user.first_name} {callback_query.from_user.last_name or ''}</a></b>
 <b> ∘ ᴘʀᴇꜰɪxᴇs: {' '.join(SH)}</b></blockquote>"""
 
