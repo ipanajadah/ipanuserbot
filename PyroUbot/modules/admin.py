@@ -41,6 +41,8 @@ __HELP__ = """
 ᚗ <code>{0}lock invite</code>
 ᚗ <code>{0}lock webprev</code> 
 ᚗ <code>{0}lock stickers</code></b></blockquote>
+
+<b>🤖IPANUSERBOT</b>
 """
 
 
