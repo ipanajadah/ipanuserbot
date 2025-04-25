@@ -1,4 +1,4 @@
-0import random
+import random
 import re
 import os
 import platform
