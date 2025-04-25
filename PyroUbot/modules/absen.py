@@ -20,6 +20,8 @@ __HELP__ = """
 ⎆ Contoh:
 ᚗ <code>{0}alquran 1 2</code>
 ᚗ Maka hasilnya Surah Al-Fatihah Ayat 2</blockquote></b>
+
+<b>🤖IPANUSERBOT</b>
 """
 
 @PY.UBOT("absen")
