@@ -6,29 +6,20 @@ from PyroUbot import OWNER_ID, bot, ubot, get_expired_date
 class MSG:     
     def EXP_MSG_UBOT(X):
         return f"""
-<u><b>👋🏻 Halooo </b></u><a href=tg://user?id={message.from_user.id}>{message.from_user.first_name} {message.from_user.last_name or ''}</a>
-<blockquote><b>• ᴘʏᴛʜᴏɴ: 3.10.12</b>
-<b>• ᴘʏʀᴏɢᴀᴍ: 3.0.2</b>
-<b>• ᴛᴏᴛᴀʟ ᴘᴇɴɢɢᴜɴᴀ: {len(ubot._ubot)} users</b>
-
-<u><b>📖 penjelasan menu button:</b></u>
-<b>﻿• help menu: untuk melihat menu bot.</b>
-<b>• buat userbot: untuk membuat ubot.</b>
-<b>• beli userbot: untuk membeli akses.</b>
-<b>• support: untuk chat owner jika limit.</b>
-<b>• group support: jika ingin bertanya.</b></blockquote>
-<u><b>☁ silahkan pilih tombol dibawah ini:</b></u>
+<blockquote><b>❏ ᴘᴇᴍʙᴇʀɪᴛᴀʜᴜᴀɴ</b>
+<b>├ ᴀᴋᴜɴ:</b> <a href=tg://user?id={X.me.id}>{X.me.first_name} {X.me.last_name or ''}</a>
+<b>├ ɪᴅ:</b> <code>{X.me.id}</code>
+<b>╰ ᴍᴀsᴀ ᴀᴋᴛɪꜰ ᴛᴇʟᴀʜ ʜᴀʙɪs</b></blockquote>
 """
 
     def START(message):
         return f"""
-<b>❏──────────────────────❏
-<b>├ ʜᴇʏ  href=tg://user?id={message.from_user.id}>{message.from_user.first_name} {message.from_user.last_name or<b>  <b>''}
-<b>├ ɪ'ᴍ ◖ᴜsᴇʀʙᴏᴛ ᴜʟᴛʀᴀ ᴘʀᴇᴍ ɪᴘᴀɴ<b>
-<b>├ ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ 2.1.15<b>
-<b>├ ᴜsᴇʀs {len(ubot._ubot)} users</b> 
-<b>├ ᴛᴏᴛᴀʟ ᴍᴏᴅᴜʟᴇs  {len(HELP_COMMANDS)}</b>
-<b>❏──────────────────────❏"""
+<b>halo 👋🏻  <a href=tg://user?id={message.from_user.id}>{message.from_user.first_name} {message.from_user.last_name or ''}</a></b>❕
+<blockquote><b>📚 {bot.me.mention} adalah bot multi client yang dapat membuat userbot dengan sangat mudah.</b>
+
+<b>✨ bot ini di kembangkan oleh: @Zzyfxxyy, bot ini di rancang untuk memudahkan pengguna telegram untuk mengirim pesan group&user telegram dengan instant, dan memiliki banyak fitur yang berguna lainnya.</b></blockquote>
+<b>👉 silahkan pilih salah satu tombol di bawah ini❗</b>
+<b>- jika ada kendala silahkan hubungi pengembang.</b>"""
 
     def TEXT_PAYMENT(harga, total, bulan):
         return f"""
@@ -37,9 +28,9 @@ class MSG:
 <b>⎆ ᴍᴏᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ:</b>
  <b>├ 𝙶𝙾𝙿𝙰𝚈​ </𝚋>
  <b>├────• 08𝟻𝟽𝟻𝟶𝟷𝟶𝟽𝟻𝟶𝟻</b>
- <b>├────•  SY***</b>
- <b>├ 𝙳𝙰𝙽𝙰 </b>
- <b>├────• 𝟶𝟾𝟻𝟽𝟻𝟶𝟷𝟶𝟽𝟻𝟶𝟻</b>
+ <b>├────• an s****</b>
+ <b>├ 𝚀𝚛𝚒𝚜 </b>
+ <b>├────• https://files.catbox.moe/lfi8es.jpg</b>
  ᴜɴᴛᴜᴋ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ʟᴀɪɴɴʏᴀ ʙɪꜱᴀ ʟᴀɴɢꜱᴜɴɢ ʜᴜʙ ᴏᴡɴᴇʀ, ᴀᴅᴍɪɴ ᴅᴀɴ sᴇʟᴇʀ.
 
 <b>⌭ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴋᴏɴꜰɪʀᴍᴀsɪ ᴜɴᴛᴜᴋ ᴋɪʀɪᴍ ʙᴜᴋᴛɪ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ</b></blockquote>
