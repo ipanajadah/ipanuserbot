@@ -10,6 +10,8 @@ __HELP__ = """
 
 <blockquote>📚perintah: {0}sudolist
 📝 penjelasan: untuk melihat daftar list pengguna sudo</blockquote></b>
+
+<b>🤖IPANUSERBOT</b>
 """
 
 
