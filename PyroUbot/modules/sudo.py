@@ -1,15 +1,15 @@
 __MODULE__ = "sudo"
 __HELP__ = """
-<b>📚bantuan untuk sudo
+<b>📖 FOLDER MODULE SUDO
 
-<blockquote>•🚦 perintah: `{0}addsudo` [reply/username/id]
-• 🦠penjelasan: tambah pengguna sudo.</blockquote>
+<blockquote>📚 perintah: {0}addsudo [@username/user_id/balas]
+📝 penjelasan: untuk menambahkan pengguna sudo</blockquote>
 
-<blockquote>• 🚦perintah: `{0}delsudo` [reply/username/id]
-• 🦠penjelasan: hapus pengguna sudo.</blockquote>
+<blockquote>📚perintah: {0}delsudo [@username/user_id/balas]
+📝 penjelasan: untuk menghapus pengguna sudo</blockquote></b>
 
-<blockquote>•🚦 perintah: `{0}sudolist`
-• 🦠penjelasan: cek pengguna sudo.</blockquote></b>
+<blockquote>📚perintah: {0}sudolist
+📝 penjelasan: untuk melihat daftar list pengguna sudo</blockquote></b>
 """
 
 
@@ -23,10 +23,10 @@ from PyroUbot import *
 
 @PY.UBOT("addsudo")
 async def _(client, message):
-    msg = await message.reply("Processing...")
+    msg = await message.reply("⏳ Tunggu Sebentar. . .")
     user_id = await extract_user(message)
     if not user_id:
-        return await msg.edit("Silakan balas pesan pengguna atau masukkan username/user ID.")
+        return await msg.edit("📚 Gunakan Perintah: .addsudo [@username] .addsudo [user_id] .addsudo [balas_pengguna]")
 
     try:
         user = await client.get_users(user_id)
@@ -46,10 +46,10 @@ async def _(client, message):
 
 @PY.UBOT("delsudo")
 async def _(client, message):
-    msg = await message.reply("Processing...")
+    msg = await message.reply("⏳ Tunggu Sebentar. . .")
     user_id = await extract_user(message)
     if not user_id:
-        return await msg.edit("Silakan balas pesan pengguna atau masukkan username/user ID.")
+        return await msg.edit("📚 Gunakan Perintah: .delsudo [@username] .delsudo [user_id] .delsudo [balas_pengguna]")
 
     try:
         user = await client.get_users(user_id)
