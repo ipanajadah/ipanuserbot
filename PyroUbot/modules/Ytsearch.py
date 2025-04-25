@@ -11,6 +11,8 @@ __HELP__ = """
 
 <blockquote><b>🚦 Perintah : <code>ytsearch</code>
 🦠 Penjelasan : Mencari video di YouTube berdasarkan kata kunci.</b></blockquote>
+
+<b>🤖IPANUSERBOT</b>
 """
 
 def fetch_youtube(api_url, query):
