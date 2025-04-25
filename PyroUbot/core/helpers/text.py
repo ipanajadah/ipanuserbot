@@ -22,12 +22,18 @@ class MSG:
 
     def START(message):
         return f"""
-<b>halo 👋🏻  <a href=tg://user?id={message.from_user.id}>{message.from_user.first_name} {message.from_user.last_name or ''}</a></b>❕
-<blockquote><b>📚 {bot.me.mention} adalah bot multi client yang dapat membuat userbot dengan sangat mudah.</b>
+<u><b>👋🏻 Halooo </b></u><a href=tg://user?id={message.from_user.id}>{message.from_user.first_name} {message.from_user.last_name or ''}</a>
+<blockquote><b>• ᴘʏᴛʜᴏɴ: 3.10.12</b>
+<b>• ᴘʏʀᴏɢᴀᴍ: 3.0.2</b>
+<b>• ᴛᴏᴛᴀʟ ᴘᴇɴɢɢᴜɴᴀ: {len(ubot._ubot)} users</b>
 
-<b>✨ bot ini di kembangkan oleh: @MAKLUUUU, bot ini di rancang untuk memudahkan pengguna telegram untuk mengirim pesan group&user telegram dengan instant, dan memiliki banyak fitur yang berguna lainnya.</b></blockquote>
-<b>👉 silahkan pilih salah satu tombol di bawah ini❗</b>
-<b>- jika ada kendala silahkan hubungi pengembang.</b>"""
+<u><b>📖 penjelasan menu button:</b></u>
+<b>﻿• help menu: untuk melihat menu bot.</b>
+<b>• buat userbot: untuk membuat ubot.</b>
+<b>• beli userbot: untuk membeli akses.</b>
+<b>• support: untuk chat owner jika limit.</b>
+<b>• group support: jika ingin bertanya.</b></blockquote>
+<u><b>☁ silahkan pilih tombol dibawah ini:</b></u>"""
 
     def TEXT_PAYMENT(harga, total, bulan):
         return f"""
