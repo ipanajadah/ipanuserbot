@@ -22,18 +22,13 @@ class MSG:
 
     def START(message):
         return f"""
-<u><b>👋🏻 Halooo </b></u><a href=tg://user?id={message.from_user.id}>{message.from_user.first_name} {message.from_user.last_name or ''}</a>
-<blockquote><b>• ᴘʏᴛʜᴏɴ: 3.10.12</b>
-<b>• ᴘʏʀᴏɢᴀᴍ: 3.0.2</b>
-<b>• ᴛᴏᴛᴀʟ ᴘᴇɴɢɢᴜɴᴀ: {len(ubot._ubot)} users</b>
-
-<u><b>📖 penjelasan menu button:</b></u>
-<b>﻿• help menu: untuk melihat menu bot.</b>
-<b>• buat userbot: untuk membuat ubot.</b>
-<b>• beli userbot: untuk membeli akses.</b>
-<b>• support: untuk chat owner jika limit.</b>
-<b>• group support: jika ingin bertanya.</b></blockquote>
-<u><b>☁ silahkan pilih tombol dibawah ini:</b></u>"""
+<b>❏──────────────────────❏
+<b>├ ʜᴇʏ  href=tg://user?id={message.from_user.id}>{message.from_user.first_name} {message.from_user.last_name or<b>  <b>''}
+<b>├ ɪ'ᴍ ◖ᴜsᴇʀʙᴏᴛ ᴜʟᴛʀᴀ ᴘʀᴇᴍ ɪᴘᴀɴ<b>
+<b>├ ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ 2.1.15<b>
+<b>├ ᴜsᴇʀs {len(ubot._ubot)} users</b> 
+<b>├ ᴛᴏᴛᴀʟ ᴍᴏᴅᴜʟᴇs  {len(HELP_COMMANDS)}</b>
+<b>❏──────────────────────❏"""
 
     def TEXT_PAYMENT(harga, total, bulan):
         return f"""
