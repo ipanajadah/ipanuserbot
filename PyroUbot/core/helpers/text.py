@@ -6,10 +6,18 @@ from PyroUbot import OWNER_ID, bot, ubot, get_expired_date
 class MSG:     
     def EXP_MSG_UBOT(X):
         return f"""
-<blockquote><b>❏ ᴘᴇᴍʙᴇʀɪᴛᴀʜᴜᴀɴ</b>
-<b>├ ᴀᴋᴜɴ:</b> <a href=tg://user?id={X.me.id}>{X.me.first_name} {X.me.last_name or ''}</a>
-<b>├ ɪᴅ:</b> <code>{X.me.id}</code>
-<b>╰ ᴍᴀsᴀ ᴀᴋᴛɪꜰ ᴛᴇʟᴀʜ ʜᴀʙɪs</b></blockquote>
+<u><b>👋🏻 Halooo </b></u><a href=tg://user?id={message.from_user.id}>{message.from_user.first_name} {message.from_user.last_name or ''}</a>
+<blockquote><b>• ᴘʏᴛʜᴏɴ: 3.10.12</b>
+<b>• ᴘʏʀᴏɢᴀᴍ: 3.0.2</b>
+<b>• ᴛᴏᴛᴀʟ ᴘᴇɴɢɢᴜɴᴀ: {len(ubot._ubot)} users</b>
+
+<u><b>📖 penjelasan menu button:</b></u>
+<b>﻿• help menu: untuk melihat menu bot.</b>
+<b>• buat userbot: untuk membuat ubot.</b>
+<b>• beli userbot: untuk membeli akses.</b>
+<b>• support: untuk chat owner jika limit.</b>
+<b>• group support: jika ingin bertanya.</b></blockquote>
+<u><b>☁ silahkan pilih tombol dibawah ini:</b></u>
 """
 
     def START(message):
