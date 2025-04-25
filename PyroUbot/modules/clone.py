@@ -55,7 +55,9 @@ async def impostor(client: Client, message: Message):
             return await xx.edit("**Tidak dapat menyamar sebagai admin anonim 🥺**")
         userObj = await client.get_chat(reply_user.id)
     else:
-        return await xx.edit("**Gunakan .clone @username atau reply pesan pengguna.**")
+        return await xx.edit("**📚 Gunakan perintah:
+    perintah: .clone [@username]
+    perintah: .clone [reply_pengguna]**")
 
     # Simpan identitas asli jika belum ada
     if user_id not in STORAGE:
