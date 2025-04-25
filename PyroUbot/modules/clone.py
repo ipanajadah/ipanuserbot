@@ -63,9 +63,9 @@ async def impostor(client: Client, message: Message):
         my_photos = [p async for p in client.get_chat_photos("me")]
         STORAGE[user_id] = {"profile": my_profile, "photos": my_photos}
 
-    await xx.edit("**Mencuri Identitas Dajjal...**")
+    await xx.edit("**Mencuri Identitas akun...**")
     await update_profile(client, userObj)
-    await xx.edit("**Gua Adalah Dajjal dan Dajjal Adalah Gua. Asekk Dajjal 🥴**")
+    await xx.edit("**Asekk gua adalah lu🥴**")
 
 async def update_profile(client: Client, userObj, restore=False):
     if restore:
