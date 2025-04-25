@@ -11,6 +11,8 @@ __HELP__ = """
 
 perintah : <code>{0}kdps</code>
     dapat membantu melihat code pos suatu desa</b></blockquote>
+    
+    <b>🤖IPANUSERBOT</b>
 """
 
 
