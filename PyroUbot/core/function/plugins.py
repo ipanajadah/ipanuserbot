@@ -6,7 +6,7 @@ from PyroUbot.modules import loadModule
 from PyroUbot.core.database import *
 from PyroUbot.config import LOGS_MAKER_UBOT
 from platform import python_version
-from pyrogram import __version__
+from pyrogram import version
 HELP_COMMANDS = {}
 
 
@@ -14,19 +14,17 @@ async def loadPlugins():
     modules = loadModule()
     for mod in modules:
         imported_module = importlib.import_module(f"PyroUbot.modules.{mod}")
-        module_name = getattr(imported_module, "__MODULE__", "").replace(" ", "_").lower()
+        module_name = getattr(imported_module, "MODULE", "").replace(" ", "_").lower()
         if module_name:
             HELP_COMMANDS[module_name] = imported_module
     print(f"[🤖 ᴜsᴇʀʙᴏᴛ 🤖] [💠 TELAH BERHASIL DIAKTIFKAN! 💠]")
     await bot.send_message(
         LOGS_MAKER_UBOT, 
        f"""                    
-<blockquote>🤖 ᴜsᴇʀʙᴏᴛ ʙᴇʀʜᴀsɪʟ ᴅɪᴀᴋᴛɪꜰᴋᴀɴ</b>
+<i>📚 USERBOT TELAH DI AKTIFKAN<i>
 
-<b>👤Userbot: {len(ubot._ubot)}</b>
-<b>🤖ᴍᴏᴅᴜʟᴇs: {len(HELP_COMMANDS)}</b>
-<b>📘ᴘʏᴛʜᴏɴ: {python_version()}</b>
-<b>📙ᴘʏʀᴏɢʀᴀᴍ: {__version__}</blockquote> 
+<blockquote> 👤 Total Pengguna: {len(ubot._ubot)}</b>
+<b>📂Plugins: {len(HELP_COMMANDS)}</blockquote> 
 """,
    reply_markup=InlineKeyboardMarkup(
             [
