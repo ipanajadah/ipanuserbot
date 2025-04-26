@@ -24,7 +24,9 @@ async def loadPlugins():
 <i>📚 USERBOT TELAH DI AKTIFKAN<i>
 
 <blockquote> 👤 Total Pengguna: {len(ubot._ubot)}</b>
-<b>📂Plugins: {len(HELP_COMMANDS)}</blockquote> 
+<b>📂Plugins: {len(HELP_COMMANDS)}</b>
+<b>📘ᴘʏᴛʜᴏɴ: {python_version()}</b>
+<b>📙ᴘʏʀᴏɢʀᴀᴍ: {version}</blockquote> 
 """,
    reply_markup=InlineKeyboardMarkup(
             [
