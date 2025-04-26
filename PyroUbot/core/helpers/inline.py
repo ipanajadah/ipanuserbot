@@ -138,8 +138,8 @@ class BTN:
             button = [
                 [InlineKeyboardButton("🤖BELI USERBOT", callback_data="bahan")],
                 [
-                    InlineKeyboardButton("🤖GERUP LOGS", url="t.me/Ipansuport"), 
-                    InlineKeyboardButton("⦪ ᴏᴡɴᴇʀ ᴛᴇsᴛɪᴍᴏɴɪ ⦫", url="t.me/enamenamscamerkangban")
+                    InlineKeyboardButton("🔥GERUP LOGS", url="https://t.me/logsmakerv2"), 
+                    InlineKeyboardButton("🤖OWNER USERBOT", url="t.me/LIMITBOTTIPAN_bot")
                 ],
                 [
                     InlineKeyboardButton("🤖 Buat Userbot", callback_data="buat_ubot"),
@@ -182,13 +182,13 @@ class BTN:
         button = [
             [
                 InlineKeyboardButton(
-                    "⦪ ʜᴀᴘᴜs ᴅᴀʀɪ ᴅᴀᴛᴀʙᴀsᴇ ⦫",
+                    "🤖DELETED TO DATABASE",
                     callback_data=f"del_ubot {int(user_id)}",
                 )
             ],
             [
                 InlineKeyboardButton(
-                    "⦪ ᴄᴇᴋ ᴍᴀsᴀ ᴀᴋᴛɪғ ⦫",
+                    "🔥CEK MASA AKTIF",
                     callback_data=f"cek_masa_aktif {int(user_id)}",
                 )
             ],
