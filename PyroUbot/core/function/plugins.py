@@ -21,10 +21,10 @@ async def loadPlugins():
     await bot.send_message(
         LOGS_MAKER_UBOT, 
        f"""                    
-<blockquote>📚 USERBOT TELAH DI AKTIFKAN</b>
+<blockquote>🤖 ᴜsᴇʀʙᴏᴛ ʙᴇʀʜᴀsɪʟ ᴅɪᴀᴋᴛɪꜰᴋᴀɴ</b>
 
-<b>👤 Total Pengguna: {len(ubot._ubot)}</b>
-<b>📂Plugins: {len(HELP_COMMANDS)}</b>
+<b>👤Userbot: {len(ubot._ubot)}</b>
+<b>🤖ᴍᴏᴅᴜʟᴇs: {len(HELP_COMMANDS)}</b>
 <b>📘ᴘʏᴛʜᴏɴ: {python_version()}</b>
 <b>📙ᴘʏʀᴏɢʀᴀᴍ: {version}</blockquote> 
 """,
