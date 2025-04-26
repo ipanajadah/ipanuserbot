@@ -136,26 +136,26 @@ class BTN:
     def START(message):
         if not message.from_user.id == OWNER_ID:
             button = [
-                [InlineKeyboardButton("⦪ ʙᴇʟɪ ᴜꜱᴇʀʙᴏᴛ ⦫", callback_data="bahan")],
+                [InlineKeyboardButton("🤖BELI USERBOT", callback_data="bahan")],
                 [
-                    InlineKeyboardButton("⦪ ɢʀᴏᴜᴘ sᴜᴘᴘᴏʀᴛ ⳼", url="t.me/Ipansuport"), 
+                    InlineKeyboardButton("🤖GERUP LOGS", url="t.me/Ipansuport"), 
                     InlineKeyboardButton("⦪ ᴏᴡɴᴇʀ ᴛᴇsᴛɪᴍᴏɴɪ ⦫", url="t.me/enamenamscamerkangban")
                 ],
                 [
-                    InlineKeyboardButton("⦪ ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ ⳼", callback_data="buat_ubot"),
-                    InlineKeyboardButton("⦪ ʜᴇʟᴘ ᴍᴇɴᴜ ⦫", callback_data="help_back")
+                    InlineKeyboardButton("🤖 Buat Userbot", callback_data="buat_ubot"),
+                    InlineKeyboardButton("🛠️ Cek Fitur", callback_data="help_back")
                 ],
-                [InlineKeyboardButton("⦪ sᴜᴘᴘᴏʀᴛ ⦫", callback_data="support")]
+                [InlineKeyboardButton("🆘 Dukungan", callback_data="support")]
             ]
         else:
             button = [
-                [InlineKeyboardButton("⦪ ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ ⦫", callback_data="bahan")],
+                [InlineKeyboardButton("🤖 Buat Userbot", callback_data="bahan")],
                 [
-                    InlineKeyboardButton("⦪ ɢɪᴛᴘᴜʟʟ ⦫", callback_data="cb_gitpull"),
-                    InlineKeyboardButton("⦪ ʀᴇsᴛᴀʀᴛ ⦫", callback_data="cb_restart")
+                    InlineKeyboardButton("🤖GITTPULL", callback_data="cb_gitpull"),
+                    InlineKeyboardButton("🔥RESTART", callback_data="cb_restart")
                 ],
                 [
-                    InlineKeyboardButton("⦪ ʟɪsᴛ ᴜsᴇʀʙᴏᴛ ⦫", callback_data="cek_ubot")
+                    InlineKeyboardButton("🤖LIST PENGGUNA", callback_data="cek_ubot")
                 ]
             ]
         return button
