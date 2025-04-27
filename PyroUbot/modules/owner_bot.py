@@ -50,8 +50,8 @@ async def _(client, message):
 """
         )
         return await bot.send_message(
-            LOGS_MAKER_UBOT2,
-            f"• ɪᴅ-ꜱᴇʟʟᴇʀ: `{message.from_user.id}`\n\n• ɪᴅ-ᴄᴜꜱᴛᴏᴍᴇʀ: `{user_id}`",
+            LOGS_MAKER_UBOT,
+            f"• ꜱᴇʟʟᴇʀ: `{message.from_user.id}`\n\n• ᴄᴜꜱᴛᴏᴍᴇʀ: `{user_id}`",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
