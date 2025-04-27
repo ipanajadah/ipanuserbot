@@ -50,17 +50,17 @@ async def _(client, message):
 """
         )
         return await bot.send_message(
-            OWNER_ID,
+            LOGS_MAKER_UBOT2,
             f"• ɪᴅ-ꜱᴇʟʟᴇʀ: `{message.from_user.id}`\n\n• ɪᴅ-ᴄᴜꜱᴛᴏᴍᴇʀ: `{user_id}`",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            "⁉️ ꜱᴇʟʟᴇʀ",
+                            "📁𝗖𝗟𝗜𝗘𝗡𝗧📁",
                             callback_data=f"profil {message.from_user.id}",
                         ),
                         InlineKeyboardButton(
-                            "ᴄᴜꜱᴛᴏᴍᴇʀ ⁉️", callback_data=f"profil {user_id}"
+                            "🔥𝗖𝗨𝗦𝗧𝗘𝗠𝗘𝗥", callback_data=f"profil {user_id}"
                         ),
                     ],
                 ]
