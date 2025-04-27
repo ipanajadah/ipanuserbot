@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pytz import timezone
-from PyroUbot.config import OWNER_ID
+from PyroUbot.config import LOGS_MAKER_UBOT
 from PyroUbot import *
 
 
