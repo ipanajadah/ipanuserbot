@@ -23,4 +23,4 @@ MONGO_URL = os.getenv("MONGO_URL", "mongodb+srv://ipanalkenzi:ipanalkenzi@cluste
 
 LOGS_MAKER_UBOT = int(os.getenv("LOGS_MAKER_UBOT", "-1002692266809"))
 
-LOGS_MAKER_UBOT2 = int(os.getenv("LOGS_MAKER_UBOT", "-1002692266809"))
+LOGS_MAKER_UBOT2 = int(os.getenv("LOGS_MAKER_UBOT2", "-1002564063146"))
