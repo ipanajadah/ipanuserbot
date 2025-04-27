@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pytz import timezone
-from PyroUbot.config import LOGS_MAKER_UBOT
+from PyroUbot.config import OWNER_ID
 from PyroUbot import *
 
 
@@ -50,17 +50,17 @@ async def _(client, message):
 """
         )
         return await bot.send_message(
-            LOGS_MAKER_UBOT,
-            f"• ꜱᴇʟʟᴇʀ: `{message.from_user.id}`\n\n• ᴄᴜꜱᴛᴏᴍᴇʀ: `{user_id}`",
+            OWNER_ID,
+            f"• ɪᴅ-ꜱᴇʟʟᴇʀ: `{message.from_user.id}`\n\n• ɪᴅ-ᴄᴜꜱᴛᴏᴍᴇʀ: `{user_id}`",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            "📁𝗖𝗟𝗜𝗘𝗡𝗧📁",
+                            "⁉️ ꜱᴇʟʟᴇʀ",
                             callback_data=f"profil {message.from_user.id}",
                         ),
                         InlineKeyboardButton(
-                            "🔥𝗖𝗨𝗦𝗧𝗘𝗠𝗘𝗥", callback_data=f"profil {user_id}"
+                            "ᴄᴜꜱᴛᴏᴍᴇʀ ⁉️", callback_data=f"profil {user_id}"
                         ),
                     ],
                 ]
