@@ -4,7 +4,7 @@ from PyroUbot import bot, ubot
 from PyroUbot.core.helpers import PY
 from PyroUbot.modules import loadModule
 from PyroUbot.core.database import *
-from PyroUbot.config import BLACKLIST_CHAT
+from PyroUbot.config import OWNER_ID
 from platform import python_version
 from pyrogram import __version__
 HELP_COMMANDS = {}
