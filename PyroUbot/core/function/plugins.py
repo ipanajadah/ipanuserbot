@@ -6,7 +6,7 @@ from PyroUbot.modules import loadModule
 from PyroUbot.core.database import *
 from PyroUbot.config import LOGS_MAKER_UBOT
 from platform import python_version
-from pyrogram import version
+from pyrogram import __version__
 HELP_COMMANDS = {}
 
 
@@ -26,7 +26,7 @@ async def loadPlugins():
 <b>👤Userbot: {len(ubot._ubot)}</b>
 <b>🤖ᴍᴏᴅᴜʟᴇs: {len(HELP_COMMANDS)}</b>
 <b>📘ᴘʏᴛʜᴏɴ: {python_version()}</b>
-<b>📙ᴘʏʀᴏɢʀᴀᴍ: {version}</blockquote> 
+<b>📙ᴘʏʀᴏɢʀᴀᴍ: {__version__}</blockquote> 
 """,
    reply_markup=InlineKeyboardMarkup(
             [
