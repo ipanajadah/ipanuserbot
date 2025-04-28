@@ -7,9 +7,9 @@ MAX_BOT = int(os.getenv("MAX_BOT", "30"))
 
 DEVS = list(map(int, os.getenv("DEVS", "6192013171").split()))
 
-API_ID = int(os.getenv("API_ID", "25659381"))
+API_ID = int(os.getenv("API_ID", "25544803"))
 
-API_HASH = os.getenv("API_HASH", "5ed08d2b31e137ca39df8f635bbee8c5")
+API_HASH = os.getenv("API_HASH", "e01c80b4dfafff7085f57edbb5a673b0")
 
 BOT_TOKEN = os.getenv("BOT_TOKEN", "7361076647:AAFieoqTuCGEMIi_XW461a9BEYeEuEPAybM")
 
