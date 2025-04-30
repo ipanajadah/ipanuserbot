@@ -3,7 +3,7 @@
 apt update && apt upgrade -y
 ```
 ```
-git clone https://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@github.com/ipan1434/kontollu
+git clone https://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@github.com/ipan1434/kontollu
 ```
 ```
 cd kontollu && screen -S kontollu
