@@ -146,12 +146,11 @@ async def gcast_handler(client, message):
     gcast_progress.remove(client.me.id)
     await gcs.delete()
     _gcs = f"""
-<blockquote><b>⌭ {bcs} ʙʀᴏᴀᴅᴄᴀsᴛ ᴛᴇʀᴋɪʀɪᴍ</b></blockquote>
-<blockquote><b>⌭ {sks} ʙᴇʀʜᴀsɪʟ : {done} ᴄʜᴀᴛ</b>
-<b>⌭ {ggl} ɢᴀɢᴀʟ : {failed} ᴄʜᴀᴛ</b>
-<b>⌭ {ktrng} ᴛʏᴘᴇ :</b> <code>{command}</code></blockquote>
-
-<blockquote><b>ᣃ࿈ ᴜsᴇʀʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ ࿈ᣄ</b></blockquote>
+<blockquote><b>{bcs}results</b>
+   <b>sks}Success: {done}</b>
+   <b>{ggl}Failed: {failed}</b>
+   <b>{ktrng}Type: <code>{command}</b>
+   <b>{bcs}Blacklist: {total_blacklist}</b></blockquote>
 """
     return await message.reply(_gcs)
 
@@ -314,8 +313,6 @@ async def _(client, message):
             response = f"""
 <blockquote><b>⌭ {grp} ɢʀᴏᴜᴘ: {message.chat.title}</blockquote ></b>
 <blockquote><b>⌭ {ktrn} ᴋᴇᴛ: ʙᴇʀʜᴀsɪʟ ᴅɪ ʜᴀᴘᴜs ᴋᴇ ᴅᴀʟᴀᴍ ʟɪsᴛ </blockquote></b>
-
-<blockquote><b>ᣃ࿈ ᴜsᴇʀʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ ࿈ᣄ</b></blockquote>
 """
 
         return await msg.edit(response)
