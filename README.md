@@ -3,7 +3,7 @@
 apt update && apt upgrade -y
 ```
 ```
-git clone https://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@github.com/ipan1434/ipanuserbot
+git clone https://github.com/ipan1434/ipanuserbot
 ```
 ```
 cd ipanuserbot && screen -S ipanuserbot
