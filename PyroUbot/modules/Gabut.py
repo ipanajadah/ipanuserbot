@@ -9,7 +9,7 @@ __MODULE__ = "gabut"
 __HELP__ = """
 <blockquote><b>✮ Bantuan Untuk gabut ✮
 
-perintah : <code>{0}turbo</code>
+perintah : <code>{0}ask</code>
     buat menjawab pertanyaan <code>{0}claude</code> haii</b></blockquote>
 """
 
@@ -34,7 +34,7 @@ async def costum_api(c, text, user_id):
         },
         {"role": "user", "content": f"{topik}"},
     ]
-    url = "https://api.botcahx.eu.org/api/search/openai-custom"
+    url = "https://api.botcahx.eu.org/api/search/openai-chat?text={a}&apikey=Biyy"
     payload = {"message": bahan, "apikey": f"{botcax_api}"}
     res = await fetch.post(url, json=payload)
     if res.status_code == 200:
