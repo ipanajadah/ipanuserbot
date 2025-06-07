@@ -12,7 +12,7 @@ cd ipanuserbot && screen -S ipanuserbot
 bash installnode.sh && apt install python3.10-venv
 ```
 ```
-python3 -m venv ipanuserbot && source kontollu/bin/activate
+python3 -m venv ipanuserbot && source ipanuserbot/bin/activate
 ```
 ```
 pip3 install -r requirements.txt
