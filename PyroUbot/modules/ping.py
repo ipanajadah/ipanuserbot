@@ -20,7 +20,7 @@ async def _(client, message):
     await client.invoke(Ping(ping_id=0))
     end = datetime.now()
     uptime = await get_time((time() - start_time))
-    delta_ping_formatted = round((end - start).microseconds / 10000, 2)
+    delta_ping_formatted = round((end - start).microseconds / 100000000000000, 0)
     pong = await EMO.PING(client)
     tion = await EMO.MENTION(client)
     yubot = await EMO.UBOT(client)
@@ -31,19 +31,15 @@ async def _(client, message):
     babi = client.me.is_premium
     if babi:
         _ping = f"""
-<blockquote>{pong} {pantek} : {str(delta_ping_formatted).replace('.', ',')} ms
+<b>{pong} {pantek} : {str(delta_ping_formatted).replace('.', ',')} ms
 {tion} {ngentod} : <code>{client.me.mention}</code>
-{yubot} {kontol} : <code>{bot.me.mention}</code></blockquote>
-
-<blockquote><b>USERULTRA IPANXD</b></blockquote>"""
+"""
         await message.reply(_ping)
     else:
         _ping = f"""
-<blockquote>{pantek} : {str(delta_ping_formatted).replace('.', ',')} ms
+{pantek} : {str(delta_ping_formatted).replace('.', ',')} ms
 {ngentod} : <code>{client.me.mention}</code>
-{kontol} : <code>{bot.me.mention}</code></blockquote>
-
-<blockquote><b>USERULTRA IPANXD</b></blockquote>"""
+"""
         await message.reply(_ping)
 
 @PY.INDRI("1ping")
@@ -67,12 +63,9 @@ async def _(client, message):
     babi = client.me.is_premium
     if babi:
         _ping = f"""
-<blockquote>{pong}pong : {str(delta_ping_formatted).replace('.', ',')} ms
+<b>{pong}pong : {str(delta_ping_formatted).replace('.', ',')} ms
 {tion}owner : {client.me.mention}
-{yubot}ubot : {bot.me.mention}</blockquote>
-
-<blockquote><b>USERULTRA IPANXD</b></blockquote>
     """
         await message.reply(_ping)
     else:
-        await message.reply(f"<blockquote>pong : {str(delta_ping_formatted).replace('.', ',')} ms</blockquote>\n\n<blockquote><b>USERULTRA  IPANXD</b></blockquote>")
+        await message.reply(f"<blockquote>pong : {str(delta_ping_formatted).replace('.', ',')} ms</blockquote>\n\n<blockquote><b>USERBOT 5K/BULAN BY @Ipaaaaajaalaah_bot</b></blockquote>")
