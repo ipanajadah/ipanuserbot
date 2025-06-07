@@ -143,13 +143,14 @@ class BTN:
             ]
         else:
             button = [
-                [InlineKeyboardButton("🔥 ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ 🔥", callback_data="bahan")],
+                [InlineKeyboardButton("ᴍᴜʟᴀɪ ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ", callback_data="bahan")],
                 [
-                    InlineKeyboardButton("🛠️ ɢɪᴛᴘᴜʟʟ", callback_data="cb_gitpull"),
-                    InlineKeyboardButton("ʀᴇsᴛᴀʀᴛ 🔁", callback_data="cb_restart")
+                    InlineKeyboardButton("✨ᴜᴘᴅᴀᴛᴇ", callback_data="cb_gitpull"),
+                    InlineKeyboardButton("ᴄᴇᴋ ᴠɪᴛᴜʀ", callback_data="help_back")
+                    InlineKeyboardButton("🔄 ʀᴇsᴛᴀʀᴛ", callback_data="cb_restart")
                 ],
                 [
-                    InlineKeyboardButton("🤖 ʟɪsᴛ ᴜsᴇʀʙᴏᴛ 🤖", callback_data="cek_ubot")
+                    InlineKeyboardButton("ʟɪsᴛ ᴜsᴇʀ", callback_data="cek_ubot")
                 ]
             ]
         return button
