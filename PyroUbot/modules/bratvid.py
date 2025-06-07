@@ -18,7 +18,7 @@ async def BratVideo(text):
             current_text = " ".join(words[:i + 1])
 
             res = requests.get(
-                f"https://brat.caliphdev.com/api/brat?text={requests.utils.quote(current_text)}",
+                f"https://api.wannnv.web.id/maker/bratvid?text={requests.utils.quote(current_text)}",
                 stream=True
             )
 
