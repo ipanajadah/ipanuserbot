@@ -11,28 +11,27 @@ from PyroUbot import *
 
 __MODULE__ = "ʙʀᴏᴀᴅᴄᴀꜱᴛ"
 __HELP__ = """
-<blockquote><b>Bantuan Broadcast
+<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙʀᴏᴀᴅᴄᴀsᴛ ⦫</b>
 
-perintah : <code>{0}gikes</code>
+<blockquote><b>⎆ perintah :
+ᚗ <code>{0}gikes</code>
+⊷ type : all , users , group
+⊷ all untuk semua , users untuk user, group untuk group
 
-type : all , users , group
+ᚗ <code>{0}stopg</code>
+⊷ untuk menghentikan proses gikes yang sedang berlangsung
 
-all untuk semua , users untuk user, group untuk group
+ᚗ <code>{0}bcfd</code> or <code>{0}cfd</code>
+⊷ mengirim pesan siaran secara forward
 
-perintah : <code>{0}stopg</code>
-    untuk menghentikan proses gikes yang sedang berlangsung
+ᚗ <code>{0}send</code>
+⊷ mengirim pesan ke user/group/channel
 
-perintah : <code>{0}bcfd</code> or <code>{0}cfd</code>
-    mengirim pesan siaran secara forward
+ᚗ <code>{0}autobc</code>
+⊷ mengirim pesan siaran secara otomatis
 
-perintah : <code>{0}send</code>
-    mengirim pesan ke user/group/channel
-
-perintah : <code>{0}autobc</code>
-    mengirim pesan siaran secara otomatis
-
-query:
-    |on/off |text |delay |remove |limit</b></blockquote>
+⌭ query :
+⊷ |on/off |text |delay |remove |limit</b></blockquote>
 """
 
 
@@ -63,30 +62,30 @@ async def limit_cmd(client, message):
         if pjg <= 100:
             if client.me.is_premium:
                 text = f"""
-<blockquote>{pong} sᴛᴀᴛᴜs ᴀᴋᴜɴ ᴘʀᴇᴍɪᴜᴍ : ᴛʀᴜᴇ
-{tion} ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ᴅɪʙᴀᴛᴀsɪ
-{yubot} ᴜʙᴏᴛ : {bot.me.mention}</blockquote>
+<blockquote>{pong}⌬ sᴛᴀᴛᴜs ᴀᴋᴜɴ ᴘʀᴇᴍɪᴜᴍ : ᴛʀᴜᴇ
+{tion}⌬ ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ᴅɪʙᴀᴛᴀsɪ
+{yubot}⌬ ᴜʙᴏᴛ : {bot.me.mention}</blockquote>
 """
             else:
                 text = f"""
-<blockquote>sᴛᴀᴛᴜs ᴀᴋᴜɴ : ʙᴇʟɪ ᴘʀᴇᴍ ᴅᴜʟᴜ ʏᴀ
-ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ᴅɪʙᴀᴛᴀsɪ
-ᴜʙᴏᴛ : {bot.me.mention}</blockquote>
+<blockquote>⌬ sᴛᴀᴛᴜs ᴀᴋᴜɴ : ʙᴇʟɪ ᴘʀᴇᴍ ᴅᴜʟᴜ ʏᴀ
+⌬ ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ᴅɪʙᴀᴛᴀsɪ
+⌬ ᴜʙᴏᴛ : {bot.me.mention}</blockquote>
 """
             await client.send_message(message.chat.id, text)
             return await client.invoke(DeleteHistory(peer=bot_info, max_id=0, revoke=True))
         else:
             if client.me.is_premium:
                 text = f"""
-<blockquote>{pong} sᴛᴀᴛᴜs ᴀᴋᴜɴ ᴘʀᴇᴍɪᴜᴍ : ᴛʀᴜᴇ
-{tion} ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴀɴᴅᴀ ʙᴇʀᴍᴀsᴀʟᴀʜ
-{yubot} ᴜʙᴏᴛ : {bot.me.mention}</blockquote>
+<blockquote>{pong}⌬ sᴛᴀᴛᴜs ᴀᴋᴜɴ ᴘʀᴇᴍɪᴜᴍ : ᴛʀᴜᴇ
+{tion}⌬ ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴀɴᴅᴀ ʙᴇʀᴍᴀsᴀʟᴀʜ
+{yubot}⌬ ᴜʙᴏᴛ : {bot.me.mention}</blockquote>
 """
             else:
                 text = f"""
-<blockquote>sᴛᴀᴛᴜs ᴀᴋᴜɴ : ʙᴇʟɪ ᴘʀᴇᴍ ᴅᴜʟᴜ ʏᴀ
-ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴀɴᴅᴀ ʙᴇʀᴍᴀsᴀʟᴀʜ
-ᴜʙᴏᴛ : {bot.me.mention}</blockquote>
+<blockquote>⌬ sᴛᴀᴛᴜs ᴀᴋᴜɴ : ʙᴇʟɪ ᴘʀᴇᴍ ᴅᴜʟᴜ ʏᴀ
+⌬ ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴀɴᴅᴀ ʙᴇʀᴍᴀsᴀʟᴀʜ
+⌬ ᴜʙᴏᴛ : {bot.me.mention}</blockquote>
 """
             await client.send_message(message.chat.id, text)
             return await client.invoke(DeleteHistory(peer=bot_info, max_id=0, revoke=True))
@@ -95,7 +94,7 @@ async def limit_cmd(client, message):
 
 gcast_progress = []
 
-@PY.UBOT("bc|gikes|gcast")
+@PY.UBOT("bc|gikes")
 @PY.TOP_CMD
 async def gcast_handler(client, message):
     global gcast_progress
@@ -120,7 +119,7 @@ async def gcast_handler(client, message):
     failed = 0
     for chat_id in chats:
         if client.me.id not in gcast_progress:
-            await gcs.edit(f"<blockquote><b>ᴘʀᴏsᴇs ɢᴄᴀsᴛ ʙᴇʀʜᴀsɪʟ ᴅɪ ʙᴀᴛᴀʟᴋᴀɴ !</b> {sks}</blockquote>")
+            await gcs.edit(f"<blockquote><b>⌭ ᴘʀᴏsᴇs ɢᴄᴀsᴛ ʙᴇʀʜᴀsɪʟ ᴅɪ ʙᴀᴛᴀʟᴋᴀɴ !</b> {sks}</blockquote>")
             return
         if chat_id in blacklist or chat_id in BLACKLIST_CHAT:
             continue
@@ -147,11 +146,12 @@ async def gcast_handler(client, message):
     gcast_progress.remove(client.me.id)
     await gcs.delete()
     _gcs = f"""
-<blockquote><b>{bcs}results</b>
-   <b>sks}Success: {done}</b>
-   <b>{ggl}Failed: {failed}</b>
-   <b>{ktrng}Type: <code>{command}</b>
-   <b>{bcs}Blacklist: {total_blacklist}</b></blockquote>
+<blockquote><b>⌭ {bcs} ʙʀᴏᴀᴅᴄᴀsᴛ ᴛᴇʀᴋɪʀɪᴍ</b></blockquote>
+<blockquote><b>⌭ {sks} ʙᴇʀʜᴀsɪʟ : {done} ᴄʜᴀᴛ</b>
+<b>⌭ {ggl} ɢᴀɢᴀʟ : {failed} ᴄʜᴀᴛ</b>
+<b>⌭ {ktrng} ᴛʏᴘᴇ :</b> <code>{command}</code></blockquote>
+
+<blockquote><b>ᣃ࿈ ᴜsᴇʀʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ ࿈ᣄ</b></blockquote>
 """
     return await message.reply(_gcs)
 
@@ -214,23 +214,23 @@ async def _(client, message):
 
     await gcs.delete()
     _gcs = f"""
-<blockquote><b>{bcs}results</b>
-   <b>sks}Success: {done} 
-   <b>{ggl}Failed: {failed}
-   <b>{ktrng}Type: <code>{command}
-   <b>{bcs}Blacklist: {total_blacklist}</b></blockquote>
+<blockquote><b>⌭ {bcs} ʙʀᴏᴀᴅᴄᴀsᴛ ғᴏʀᴡᴀʀᴅ ᴅᴏɴᴇ</blockquote></b>
+<blockquote><b>⌭ {brhsl} sᴜᴄᴄᴇs {done} ɢʀᴏᴜᴘ</b>
+<b>⌭ {ggl} ғᴀɪʟᴇᴅ {failed} ɢʀᴏᴜᴘ</blockquote></b>
+
+<blockquote><b>ᣃ࿈ ᴜsᴇʀʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ ࿈ᣄ</b></blockquote>
 """
     return await message.reply(_gcs)
 
 
-@PY.BOT("bcast")
+@PY.BOT("bcbot")
 @PY.ADMIN
 async def _(client, message):
-    msg = await message.reply("<blockquote><b>okee proses Boy...</blockquote></b>\n\n<blockquote><b>mohon bersabar untuk menunggu proses broadcast sampai selesai</blockquote></b>", quote=True)
+    msg = await message.reply("<blockquote><b>⌭ okee proses...</blockquote></b>\n\n<blockquote><b>⌭ mohon bersabar untuk menunggu proses broadcast sampai selesai</blockquote></b>", quote=True)
 
     send = get_message(message)
     if not send:
-        return await msg.edit("mohon balaꜱ atau ketik ꜱeꜱuatu...")
+        return await msg.edit("⌭ mohon balaꜱ atau ketik ꜱeꜱuatu...")
         
     susers = await get_list_from_vars(client.me.id, "SAVED_USERS")
     done = 0
@@ -251,7 +251,7 @@ async def _(client, message):
         except Exception:
             pass
 
-    return await msg.edit(f"<blockquote><b>Pesan broadcast berhasil terkirim ke {done} user</blockquote></b>\n\n<blockquote><b>`USERBOT 5K/BULAN BY` @Ipaaaaajaalaah_bot</b></blockquote>")
+    return await msg.edit(f"<blockquote><b>⌭ Pesan broadcast berhasil terkirim ke {done} user</blockquote></b>\n\n<blockquote><b>ᣃ࿈ ᴜsᴇʀʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ ࿈ᣄ</b></blockquote>")
 
 
 @PY.UBOT("addbl")
@@ -270,12 +270,17 @@ async def _(client, message):
 
         if chat_id in blacklist:
             txt = f"""
-<b>{message.chat.title} Berhasil ditambahkan ke dalam blacklist.</b>
+<blockquote><b>⌭ {grp} ɢʀᴏᴜᴘ: {message.chat.title}</blockquote></b>
+<blockquote><b>⌭ {ktrn} ᴋᴇᴛ: sᴜᴅᴀʜ ᴀᴅᴀ ᴅᴀʟᴀᴍ ʟɪsᴛ</blockquote></b>
+
+<blockquote><b>ᣃ࿈ ᴜsᴇʀʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ ࿈ᣄ</b></blockquote>
 """
         else:
             await add_to_vars(client.me.id, "BL_ID", chat_id)
             txt = f"""
-<blockquote><b>{grp} ɢʀᴏᴜᴘ: {message.chat.title}</blockquote></b>\n<blockquote><b>{ktrn} ᴋᴇᴛ: ʙᴇʀʜᴀsɪʟ ᴅɪ ᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴅᴀʟᴀᴍ ʟɪsᴛ ᴊᴇᴍʙᴏᴛ</blockquote></b>
+<blockquote><b>⌭ {grp} ɢʀᴏᴜᴘ: {message.chat.title}</blockquote></b>\n<blockquote><b>⌭ {ktrn} ᴋᴇᴛ: ʙᴇʀʜᴀsɪʟ ᴅɪ ᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴅᴀʟᴀᴍ ʟɪsᴛ ᴊᴇᴍʙᴏᴛ</blockquote></b>
+
+<blockquote><b>ᣃ࿈ ᴜsᴇʀʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ ࿈ᣄ</b></blockquote>
 """
 
         return await msg.edit(txt)
@@ -299,13 +304,18 @@ async def _(client, message):
 
         if chat_id not in blacklist:
             response = f"""
-<b>Grup {message.chat.title} berhasil dihapus dalam blacklist!!</b>
+<blockquote><b>⌭ {grp} ɢʀᴏᴜᴘ: {message.chat.title}</blockquote></b>
+<blockquote><b>⌭ {ktrn} ᴋᴇᴛ: ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴅᴀʟᴀᴍ ʟɪsᴛ </b></blockquote>
+
+<blockquote><b>ᣃ࿈ ᴜsᴇʀʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ ࿈ᣄ</b></blockquote>
 """
         else:
             await remove_from_vars(client.me.id, "BL_ID", chat_id)
             response = f"""
-<blockquote><b>{grp} ɢʀᴏᴜᴘ: {message.chat.title}</blockquote ></b>
-<blockquote><b>{ktrn} ᴋᴇᴛ: ʙᴇʀʜᴀsɪʟ ᴅɪ ʜᴀᴘᴜs ᴋᴇ ᴅᴀʟᴀᴍ ʟɪsᴛ ᴊᴇᴍʙᴏᴛ</blockquote></b>
+<blockquote><b>⌭ {grp} ɢʀᴏᴜᴘ: {message.chat.title}</blockquote ></b>
+<blockquote><b>⌭ {ktrn} ᴋᴇᴛ: ʙᴇʀʜᴀsɪʟ ᴅɪ ʜᴀᴘᴜs ᴋᴇ ᴅᴀʟᴀᴍ ʟɪsᴛ </blockquote></b>
+
+<blockquote><b>ᣃ࿈ ᴜsᴇʀʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ ࿈ᣄ</b></blockquote>
 """
 
         return await msg.edit(response)
@@ -334,7 +344,7 @@ async def _(client, message):
         except:
             list += f" ├ {chat_id}\n"
 
-    list += f"{ktrng} total blackliꜱt {total_blacklist}"
+    list += f"{ktrng} ⌭ total blackliꜱt {total_blacklist}"
     return await mzg.edit(list)
 
 
@@ -383,7 +393,7 @@ async def _(client, message):
                 return await message.reply(f"{t}")
     else:
         if len(message.command) < 3:
-            return await message.reply("Ketik yang bener kntl")
+            return await message.reply("⌭ Ketik yang bener kntl")
         chat_id, chat_text = message.text.split(None, 2)[1:]
         try:
             if "_" in chat_id:
@@ -436,11 +446,11 @@ async def _(client, message):
     if type == "on":
         if not auto_text_vars:
             return await msg.edit(
-                f"{ggl}harap ꜱetting text terlebih dahulu"
+                f"⌭ {ggl} harap ꜱetting text terlebih dahulu"
             )
 
         if client.me.id not in AG:
-            await msg.edit(f"{brhsl}auto gcaꜱt di aktifkan")
+            await msg.edit(f"⌭ {brhsl}auto gcaꜱt di aktifkan")
 
             AG.append(client.me.id)
 
@@ -472,10 +482,10 @@ async def _(client, message):
 
                 done += 1
                 await msg.reply(f"""
-{bcs}auto_gcaꜱt done
-putaran {done}
-{brhsl}ꜱucceꜱ {group} group
-{mng}wait {delay} minuteꜱ
+⌭ {bcs}auto_gcaꜱt done
+⌭ putaran {done}
+⌭ {brhsl}ꜱucceꜱ {group} group
+⌭ {mng}wait {delay} minuteꜱ
 """,
                     quote=True,
                 )
@@ -486,17 +496,17 @@ putaran {done}
     elif type == "off":
         if client.me.id in AG:
             AG.remove(client.me.id)
-            return await msg.edit(f"{brhsl}auto gcast dinonaktifkan")
+            return await msg.edit(f"⌭ {brhsl}auto gcast dinonaktifkan")
         else:
             return await msg.delete()
 
     elif type == "text":
         if not value:
             return await msg.edit(
-                f"{ggl}{message.text.split()[0]} text - [value]"
+                f"⌭ {ggl}{message.text.split()[0]} text - [value]"
             )
         await add_auto_text(client, value)
-        return await msg.edit(f"{brhsl}berhasil di simpan")
+        return await msg.edit(f"⌭ {brhsl}berhasil di simpan")
 
     elif type == "delay":
         if not int(value):
@@ -529,7 +539,7 @@ putaran {done}
     elif type == "list":
         if not auto_text_vars:
             return await msg.edit(f"{ggl}auto gcast text kosong")
-        txt = "daftar auto gcast text\n\n"
+        txt = "⌭ daftar auto gcast text\n\n"
         for num, x in enumerate(auto_text_vars, 1):
             txt += f"{num}> {x}\n\n"
         txt += f"\nuntuk menghapus text:\n{message.text.split()[0]} remove [angka/all]"
@@ -565,20 +575,3 @@ async def add_auto_text(client, text):
     auto_text = await get_vars(client.me.id, "AUTO_TEXT") or []
     auto_text.append(text)
     await set_vars(client.me.id, "AUTO_TEXT", auto_text)
-
-@PY.BOT("bcubot")
-@PY.ADMIN
-async def broadcast_bot(client, message):
-    msg = await message.reply("<b>sᴇᴅᴀɴɢ ᴅɪᴘʀᴏsᴇs ᴛᴜɴɢɢᴜ sᴇʙᴇɴᴛᴀʀ</b>", quote=True)
-    done = 0
-    if not message.reply_to_message:
-        return await msg.edit("<b>ᴍᴏʜᴏɴ ʙᴀʟᴀs ᴘᴇsᴀɴ</b>")
-    for x in ubot._ubot:
-        try:
-            await x.unblock_user(bot.me.username)
-            await message.reply_to_message.forward(x.me.id)
-            done += 1
-        except Exception:
-            pass
-    return await msg.edit(f"✅ ʙᴇʀʜᴀsɪʟ ᴍᴇɴɢɪʀɪᴍ ᴘᴇsᴀɴ ᴋᴇ {done} ᴜʙᴏᴛ")
-    
