@@ -151,7 +151,7 @@ async def gcast_handler(client, message):
    <b>{ggl}Failed: {failed}</b>
    <b>{ktrng}Type: <code>{command}</b>
    <b>{bcs}Blacklist: {total_blacklist}</b></blockquote>
-    """
+     """
     return await message.reply(_gcs)
 
 @PY.UBOT("stopg")
