@@ -148,9 +148,9 @@ async def gcast_handler(client, message):
     await gcs.delete()
     _gcs = f"""
 <blockquote><b>{bcs}results</b>
-   <b>sks}Success: {done} 
-   <b>{ggl}Failed: {failed}
-   <b>{ktrng}Type: <code>{command}
+   <b>sks}Success: {done}</b>
+   <b>{ggl}Failed: {failed}</b>
+   <b>{ktrng}Type: <code>{command}</b>
    <b>{bcs}Blacklist: {total_blacklist}</b></blockquote>
 """
     return await message.reply(_gcs)
