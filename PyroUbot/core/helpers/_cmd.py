@@ -224,8 +224,8 @@ class PY:
                 user_link = f"<a href=tg://user?id={message.from_user.id}>{message.from_user.first_name} {message.from_user.last_name or ''}</a>"
                 formatted_text = f"{user_link}\n\n{message.text}"
                 buttons = [
-                    [InlineKeyboardButton("👤 ᴅᴀᴘᴀᴛᴋᴀɴ ᴘʀᴏғɪʟ 👤", callback_data=f"profil {message.from_user.id}"),
-                    InlineKeyboardButton("🗯 ᴊᴀᴡᴀʙ ᴘᴇsᴀɴ 🗯", callback_data=f"jawab_pesan {message.from_user.id}")],
+                    [InlineKeyboardButton("👤 Akun", callback_data=f"profil {message.from_user.id}"),
+                    InlineKeyboardButton("💬 Kirim Pesan", callback_data=f"jawab_pesan {message.from_user.id}")],
                 ]
                 await bot.send_message(
                     OWNER_ID,
