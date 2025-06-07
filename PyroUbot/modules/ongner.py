@@ -83,9 +83,7 @@ async def _(client, message):
         if babi:
             _ping = f"""
 <blockquote>{pong} ᴘᴏɴɢ : {str(delta_ping_formatted).replace('.', ',')} ms
-{tion} ᴜsᴇʀʙᴏᴛ ᴏɴ ʙᴀɴɢ mor</blockquote>
-
-<blockquote><b>-- 👾 USERBOT PREMIUM 👾 --</b></blockquote>
+{tion} on sayang</blockquote>
 """
             await message.reply(_ping)
         else:
