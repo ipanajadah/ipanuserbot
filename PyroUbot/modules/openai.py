@@ -26,7 +26,7 @@ async def chat_gpt(client, message):
         else:
             prs = await message.reply_text(f"<emoji id=6226405134004389590>🔍</emoji>proccesing....")
             hai = message.text.split(' ', 1)[1]
-            response = requests.get(f'https://api.wannnv.web.id/ai/gpt4?text=Babi')
+            response = requests.get(f'https://api.botcahx.eu.org/api/search/openai-chat?text={a}&apikey=Biyy')
 
             try:
                 if "result" in response.json():
