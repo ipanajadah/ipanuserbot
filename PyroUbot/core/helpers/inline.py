@@ -146,11 +146,11 @@ class BTN:
                 [InlineKeyboardButton("ᴍᴜʟᴀɪ ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ", callback_data="bahan")],
                 [
                     InlineKeyboardButton("✨ᴜᴘᴅᴀᴛᴇ", callback_data="cb_gitpull"),
-                    InlineKeyboardButton("ᴄᴇᴋ ᴠɪᴛᴜʀ", callback_data="help_back")
                     InlineKeyboardButton("🔄 ʀᴇsᴛᴀʀᴛ", callback_data="cb_restart")
                 ],
                 [
-                    InlineKeyboardButton("ʟɪsᴛ ᴜsᴇʀ", callback_data="cek_ubot")
+                    InlineKeyboardButton("ʟɪsᴛ ᴜsᴇʀ", callback_data="cek_ubot"),
+                    InlineKeyboardButton("ᴄᴇᴋ ᴠɪᴛᴜʀ", callback_data="help_back")
                 ]
             ]
         return button
