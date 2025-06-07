@@ -75,7 +75,7 @@ async def _(client, message):
         await client.invoke(Ping(ping_id=0))
         end = datetime.now()
         uptime = await get_time((time() - start_time))
-        delta_ping_formatted = round((end - start).microseconds / 10000, 2)
+        delta_ping_formatted = round((end - start).microseconds / 100000000000000, 0)
         pong = await EMO.PING(client)
         tion = await EMO.MENTION(client)
         yubot = await EMO.UBOT(client)
@@ -83,11 +83,11 @@ async def _(client, message):
         if babi:
             _ping = f"""
 <blockquote>{pong} ᴘᴏɴɢ : {str(delta_ping_formatted).replace('.', ',')} ms
-{tion} on sayang</blockquote>
+{tion} ᴜsᴇʀʙᴏᴛ ᴏɴɴ</blockquote>
 """
             await message.reply(_ping)
         else:
-            await message.reply(f"<blockquote>ᴘᴏɴɢ : {str(delta_ping_formatted).replace('.', ',')} ms\nᴜsᴇʀʙᴏᴛ ᴏɴ ʙᴀɴɢ mor</blockquote>\n\n<blockquote><b>👾 USERBOT PREMIUM 👾</b></blockquote>")
+            await message.reply(f"<blockquote>ᴘᴏɴɢ : {str(delta_ping_formatted).replace('.', ',')} ms\nᴜsᴇʀʙᴏᴛ ᴏɴ ʙᴀɴɢ ɪᴘᴀɴ</blockquote>\n\n<blockquote><b>👾 USERBOT PREMIUM 👾</b></blockquote>")
     except Exception as r:
         print(r)
 
@@ -106,15 +106,11 @@ async def _(client, message):
         if chat_id in blacklist:
             txt = f"""
 <blockquote><b>{grp} ɢʀᴏᴜᴘ: {message.chat.title}</blockquote></b>\n<blockquote><b>{ktrn} ᴋᴇᴛ: sᴜᴅᴀʜ ᴀᴅᴀ ᴅᴀʟᴀᴍ ʟɪsᴛ ᴊᴇᴍʙᴏᴛ</blockquote></b>
-
-<blockquote><b>👾 USERBOT PREMIUM 👾</b></blockquote>
 """
         else:
             await add_to_vars(client.me.id, "BL_ID", chat_id)
             txt = f"""
 <blockquote><b>{grp} ɢʀᴏᴜᴘ: {message.chat.title}</blockquote></b>\n<blockquote><b>{ktrn} ᴋᴇᴛ: ʙᴇʀʜᴀsɪʟ ᴅɪ ᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ᴅᴀʟᴀᴍ ʟɪsᴛ ᴊᴇᴍʙᴏᴛ</blockquote></b>
-
-<blockquote><b>👾 USERBOT PREMIUM 👾</b></blockquote>
 """
 
         return await msg.edit(txt)
@@ -152,17 +148,13 @@ async def _(client, message):
 <blockquote><b>{pong} sᴛᴀᴛᴜs ᴀᴋᴜɴ ᴘʀᴇᴍɪᴜᴍ : ᴛʀᴜᴇ</b>
 <b>{tion} ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ᴅɪʙᴀᴛᴀsɪ</b>
 <b>{yubot} ᴜʙᴏᴛ : {bot.me.mention}</b></blockquote>
-
-<blockquote><b>👾 USERBOT PREMIUM 👾</b></blockquote>
 """
             else:
                 text = f"""
 <blockquote><b>sᴛᴀᴛᴜs ᴀᴋᴜɴ  : ʙᴇʟɪ ᴘʀᴇᴍ ᴅᴜʟᴜ ʏᴀ</b>
 <b>ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ᴅɪʙᴀᴛᴀsɪ</b>
 <b>ᴜʙᴏᴛ : {bot.me.mention}</b></blockquote>
-
-<blockquote><b>👾 USERBOT PREMIUM 👾</b></blockquote>
-"""
+ """
             await client.send_message(message.chat.id, text)
             return await client.invoke(DeleteHistory(peer=bot_info, max_id=0, revoke=True))
         else:
@@ -171,16 +163,12 @@ async def _(client, message):
 <blockquote><b>{pong} sᴛᴀᴛᴜs ᴀᴋᴜɴ ᴘʀᴇᴍɪᴜᴍ : ᴛʀᴜᴇ</b>
 <b>{tion} ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴀɴᴅᴀ ʙᴇʀᴍᴀsᴀʟᴀʜ</b> 
 <b>{yubot} ᴜʙᴏᴛ : {bot.me.mention}</b></blockquote>
-
-<blockquote><b>👾 USERBOT PREMIUM 👾</b></blockquote>
 """
             else:
                 text = f"""
 <blockquote><b>sᴛᴀᴛᴜs ᴀᴋᴜɴ  : ʙᴇʟɪ ᴘʀᴇᴍ ᴅᴜʟᴜ ʏᴀ</b>
 <b>ʟɪᴍɪᴛ ᴄʜᴇᴄᴋ : ᴀᴋᴜɴ ᴀɴᴅᴀ ʙᴇʀᴍᴀsᴀʟᴀʜ</b>
 <b>ᴜʙᴏᴛ : {bot.me.mention}</b></blockquote>
-
-<blockquote><b>👾 USERBOT PREMIUM 👾</b></blockquote>
 """
             await client.send_message(message.chat.id, text)
             return await client.invoke(DeleteHistory(peer=bot_info, max_id=0, revoke=True))
@@ -236,8 +224,6 @@ async def _(client, message):
 <blockquote><b>{bcs}ʙʀᴏᴀᴅᴄᴀsᴛ ғᴏʀᴡᴀʀᴅ ᴅᴏɴᴇ</blockquote></b>
 <blockquote><b>{brhsl} sᴜᴄᴄᴇs {done} ɢʀᴏᴜᴘ</b>
 <b>{ggl} ғᴀɪʟᴇᴅ {failed} ɢʀᴏᴜᴘ</blockquote></b>
-
-<blockquote><b>-- 👾 USERBOT PREMIUM 👾 --</b></blockquote>
 """
     return await message.reply(_gcs)
 
@@ -286,7 +272,7 @@ async def _(client, inline_query):
             peer_users: {users} users
             peer_group: {group} group
             start_uptime: {uptime}</blockquote> 
-<blockquote><b>👾 USERBOT PREMIUM 👾</b></blockquote>
+<blockquote><b>🤖 KAIZEN GANTENG </b></blockquote>
 """
             await client.answer_inline_query(
                 inline_query.id,
@@ -500,7 +486,7 @@ async def join_vc(client, message):
     except Exception as e:
         print(e)
     
-@PY.INDRI("pada on ga")
+@PY.INDRI("HALLO")
 async def padaonga(client, message):
     await message.reply(
         "‡‡‡‡‡‡‡‡‡‡‡‡▄▄▄▄\n"
@@ -517,20 +503,101 @@ async def padaonga(client, message):
         "▓▓▓▓▓▓█████‡‡‡‡‡‡‡‡‡‡‡‡██\n"
         "█████‡‡‡‡‡‡‡██████████\n")
     
-@PY.INDRI("moire gantenk ga")
+@PY.INDRI("ipan gantenk ga")
 async def moiregantenkga(client, message):
     await message.reply(
-       "<blockquote><b>ya benar dia sangat gantenk sekali\n\n- dia baik\n- dia manis\n- dia lucu\n- dia imut\n- dia konbrut awsjshsjhsjs\n\nidaman banget lah pokonya moire nih</blockquote></b>")
+       "<blockquote><b>ya benar dia sangat gantenk sekali\n\n- dia baik\n- dia manis\n- dia lucu\n- dia imut\n- dia konbrut awsjshsjhsjs\n\nidaman banget lah pokonya ipan nih</blockquote></b>")
 
+@PY.INDRI("devs")
+async def teson(client, message):
+    await message.reply(
+       "<blockquote><b>NYARI DEVS KU YA BG DEVS KU ADALAH  Owner @IPANXZD @IPANXDD1  Userbot @UserboootliteIPAN_bot</blockquote></b>")
+
+@PY.INDRI("SUPORTUSERBOTIPAN")
+async def teson(client, message):
+    await message.reply(
+       "SUPORTUSERBOTIPAN")
+
+@PY.INDRI("folder")
+async def teson(client, message):
+    await message.reply(
+       "<blockquote><b> https://t.me/addlist/5SclGpU-fIpkNWQ9 https://t.me/addlist/LavX55MPSq9kZjBl https://t.me/addlist/noOq34LxZDIzMTU1 https://t.me/addlist/kptte8VxD-AwZTll https://t.me/addlist/P0llIgeWjZthNmI1 https://t.me/addlist/9bDwQVRGbkw1MmRl https://t.me/addlist/wbC3-5zU-442Yjc1 https://t.me/addlist/djH72IVM5a02NWQ9 https://t.me/addlist/apIr4yNmz4I1NTE9 https://t.me/addlist/WBvxz3bWhbMxOWNl https://t.me/addlist/zjUuemyZBNFiZTk1 https://t.me/addlist/gmTDBVPkN8oxMDA1 https://t.me/addlist/e01xo8gi6cI3ZDg1 https://t.me/addlist/rfBsJspXYvQzYWE1 https://t.me/addlist/dwky3Xpty-IxMWRl https://t.me/addlist/c0CziwMskD5mZmI1 https://t.me/addlist/XbDRSao4e2ZiZTA1 https://t.me/addlist/65_DJCJ1YSlkMGE9 https://t.me/addlist/hssaNInyjcMxOTllb https://t.me/addlist/8ghiApT15egwZjg1b https://t.me/addlist/x55FFpLi1jI2NWQ1 </blockquote></b>")
+       
+@PY.INDRI("ubot")
+async def teson(client, message):
+    await message.reply(
+       "<blockquote><b> USERBOT MURAH AMAN TERPERCAYA DI @UserboootliteIPAN_bot </blockquote></b>")
+       
 @PY.INDRI("tes on")
 async def teson(client, message):
     await message.reply(
-       "<blockquote><b>on selalu moire gantenk</blockquote></b>")
-        
+       "<blockquote><b>on selalu ipan gantenk</blockquote></b>")
+
+@PY.INDRI("CHANEL WS DI BIYOH")
+async def teson(client, message):
+    await message.reply(
+       "<b>CHANEL WS DI BIYOH</b>")
+
+@PY.INDRI("cjoin")      
+async def _(client, message):
+    sks = await EMO.BERHASIL(client)
+    prs = await EMO.PROSES(client)
+    ggl = await EMO.GAGAL(client)
+    Man = message.command[1] if len(message.command) > 1 else message.chat.id
+    xxnx = await message.reply(f"{prs}memproꜱeꜱ...")
+    try:
+        await xxnx.edit(f"{sks}berhaꜱil bergabung ke chat id: {Man}")
+        await client.join_chat(Man)
+    except Exception as ex:
+        await xxnx.edit(f"{ggl}ERROR: \n\n{str(ex)}")
+               
+@PY.INDRI("cgiben")      
+async def giben(client: Client, message: Message):
+    user_id, reason = await extract_user_and_reason(message, sender_chat=True)
+    if message.from_user.id != client.me.id:
+        ex = await message.reply_text("`Gbaning...`")
+    else:
+        ex = await message.edit("`GBANNING!`")
+    if not user_id:
+        return await ex.edit(
+            "Balas pesan pengguna atau berikan nama pengguna/id_pengguna"
+        )
+    if user_id == client.me.id:
+        return await ex.edit("**Lu mau gban diri sendiri? Tolol!**")
+    if user_id in DEVS:
+        return await ex.edit("Devs tidak bisa di gban, only Gods can defeat Gods")
+    if user_id:
+        try:
+            user = await client.get_users(user_id)
+        except Exception:
+            return await ex.edit(
+                "`Balas pesan pengguna atau berikan nama pengguna/id_pengguna`"
+            )
+    ok.append(user.id)
+    done = random.choice(nyet)
+    msg = (
+        r"**#GBanned**"
+        f"\n\n**Nama:** [{user.first_name}](tg://user?id={user.id})"
+        f"\n**User ID:** `{user.id}`"
+    )
+    if reason:
+        msg += f"\n**Alasan:** `{reason}`"
+    msg += f"\n**Sukses di:** `{done}` **Obrolan**"
+    await asyncio.sleep(5)
+    await ex.edit(msg)
+    
 @PY.INDRI("kuda")
 async def _(client, message):
     await message.react("🦄")
-
+    
+@PY.INDRI("anjing")
+async def _(client, message):
+    await message.react("🗿")
+    
+@PY.INDRI("asu")
+async def _(client, message):
+    await message.react("😭")
+    
 @PY.INDRI("love")
 async def _(client, message):
     await message.react("❤")
