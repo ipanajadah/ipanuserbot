@@ -143,14 +143,14 @@ class Ubot(Client):
 
 
 bot = Bot(
-    name="bot",
+    name="ubotjefrii",
     bot_token=BOT_TOKEN,
     api_id=API_ID,
     api_hash=API_HASH,
     in_memory=True,
 )
 
-ubot = Ubot(name="ubotipan")
+ubot = Ubot(name="ubotjefrii")
 
 from PyroUbot.core.database import *
 from PyroUbot.core.function import *
