@@ -24,11 +24,15 @@ async def _(client, message):
     await asyncio.sleep(3.5)
     await xx.delete()
 
-    xx = await message.reply_sticker("CAACAgIAAyEGAASqtYwGAAIBcGhDEIloayuQHGmrej14aQ_akwmIAALTAAOWn4wOG0m_uoE_dq4eBA")
+    xx = await message.reply_sticker("CAACAgIAAyEGAASqtYwGAAIBT2hDD6gPqfYoc7RTLz2frUw2QATCAALKAAOWn4wOi8h9_FMnWzceBA")
+    await asyncio.sleep(3.5)
+    await xx.delete()
+
+    xx = await message.reply_sticker("CAACAgUAAxkBAAJSo2hFCxj-b1XJxdIWFbOAruKHj6P7AAJICwACuipZVUml8oz4BMZeHgQ")
     await asyncio.sleep(3.5)
     await xx.delete()
     
-    xx = await message.reply_sticker("CAACAgUAAxkDAAJI-mhC0TbJepHkeqcCtSgaVR_vO_psAAJRCwACh8rBVUMJtQExXYmdHgQ")
+    xx = await message.reply_sticker("CAACAgUAAxkDAAJI-CAACAgIAAxkBAAJSm2hFCrOsJPKWvq5qJ4471SHifo8YAAJjSQACN9t5SxiyQ_4YCu7VHgQ")
     await asyncio.sleep(3.5)
     await xx.delete()
 
