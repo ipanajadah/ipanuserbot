@@ -48,8 +48,8 @@ async def _(client, message):
     msg = MSG.START(message)
 
     buttons = BTN.START(message)
-         msg = MSG.START(message)
-        photo_url = "https://files.catbox.moe/0k8f7l.jpg"
+    msg = MSG.START(message)
+    photo_url = "https://files.catbox.moe/0k8f7l.jpg"
 
         try:
             return await msg.reply_photo(
