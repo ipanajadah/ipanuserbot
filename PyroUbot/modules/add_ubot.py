@@ -44,7 +44,6 @@ async def _(client, message):
     await asyncio.sleep(3.5)
     await xxx.delete()
     
-    return await message.reply(msg, reply_markup=InlineKeyboardMarkup(buttons))
     buttons = BTN.START(message)
     msg = MSG.START(message)
 
@@ -52,7 +51,8 @@ async def _(client, message):
         photo="https://files.catbox.moe/0k8f7l.jpg", 
         caption=msg, 
         reply_markup=InlineKeyboardMarkup(buttons)
-    )
+        
+    return await message.reply(msg, reply_markup=InlineKeyboardMarkup(buttons))
 
 
 @PY.CALLBACK("bahan")
