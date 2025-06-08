@@ -13,16 +13,7 @@ from PyroUbot import *
 @PY.BOT("start")
 @PY.START
 @PY.PRIVATE
-async def _(client, message):
-    buttons = BTN.START(message)
-    msg = MSG.START(message)
-
-    await message.reply_photo(
-        photo="https://files.catbox.moe/0k8f7l.jpg", 
-        caption=msg, 
-        reply_markup=InlineKeyboardMarkup(buttons)
-    )
-    
+async def _(client, message): 
     buttons = BTN.START(message)
     msg = MSG.START(message)
     x = await message.reply_sticker("CAACAgIAAyEGAASTgqFxAAEROsloRaEte6mVPj7KKISLhN7xTFQSWgACexwAAujVUElQ2GCEYrp9wR4E")
@@ -54,6 +45,14 @@ async def _(client, message):
     await xxx.delete()
     
     return await message.reply(msg, reply_markup=InlineKeyboardMarkup(buttons))
+    buttons = BTN.START(message)
+    msg = MSG.START(message)
+
+    await message.reply_photo(
+        photo="https://files.catbox.moe/0k8f7l.jpg", 
+        caption=msg, 
+        reply_markup=InlineKeyboardMarkup(buttons)
+    )
 
 
 @PY.CALLBACK("bahan")
