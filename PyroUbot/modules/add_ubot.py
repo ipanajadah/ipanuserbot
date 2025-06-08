@@ -28,7 +28,7 @@ async def _(client, message):
     await asyncio.sleep(3.5)
     await xx.delete()
 
-    xx = await message.reply_sticker("CAACAgUAAxkBAAJSo2hFCxj-b1XJxdIWFbOAruKHj6P7AAJICwACuipZVUml8oz4BMZeHgQ")
+    xx = await message.reply_sticker("CAACAgIAAxkDAAJVgmhFpjoGtmbo497OfIglGtcXeYuqAAKYTQACibIpSeQYQgdYxw9YHgQ")
     await asyncio.sleep(3.5)
     await xx.delete()
     
