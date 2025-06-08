@@ -18,8 +18,8 @@ async def _(client, message):
     msg = MSG.START(message)
 
     await message.reply_photo(
-        photo="https://files.catbox.moe/0k8f7l.jpg", 
-        caption=msg, 
+        msg = MSG.START(message)
+        photo_url = "https://files.catbox.moe/0k8f7l.jpg"
     x = await message.reply_sticker("CAACAgIAAyEGAASTgqFxAAEROsloRaEte6mVPj7KKISLhN7xTFQSWgACexwAAujVUElQ2GCEYrp9wR4E")
     await asyncio.sleep(3.5)
     await x.delete()
