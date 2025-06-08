@@ -21,11 +21,12 @@ async def _(client, callback_query):
         pesan = await bot.ask(
             user_id,
             f"""
-<blockquote><b>SILAHKAN MELAKUKAN PEMBAYARAN SEBESAR 15.000 KE NOMOR DANA GOPAY OWNER</b>           
+<blockquote><b>💬 sɪʟᴀʜᴋᴀɴ ᴍᴇʟᴀᴋᴜᴋᴀɴ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴛᴇʀʟᴇʙɪʜ ᴅᴀʜᴜʟᴜ</b> 
 
-DANA : ||085750107505||
-GOPAY : 085750107505
-<b>💬 sɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍᴋᴀɴ ʙᴜᴋᴛɪ sᴄʀᴇᴇɴsʜᴏᴛ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ: {full_name}</b></blockquote>
+silahkan chat owner saya
+OWNER BOT : <a href=tg://openmessage?user_id={OWNER_ID}>@Notfaund_new</a> 
+
+<b>🛍 ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴋᴏɴꜰɪʀᴍᴀsɪ ᴜɴᴛᴜᴋ ᴋɪʀɪᴍ ʙᴜᴋᴛɪ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ</b></blockquote>
 """,
             timeout=300,
         )
@@ -54,7 +55,7 @@ GOPAY : 085750107505
             )
             CONFIRM_PAYMENT.remove(get.id)
             buttons = [
-                [InlineKeyboardButton("📞 ᴏᴡɴᴇʀ", url="https://t.me/IPAN9Q")]
+                [InlineKeyboardButton("📞 ᴏᴡɴᴇʀ", url="https://t.me/Notfaund_new")]
             ]
             return await bot.send_message(
                 user_id,
