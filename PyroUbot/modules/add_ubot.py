@@ -23,7 +23,6 @@ async def _(client, message):
         reply_markup=InlineKeyboardMarkup(buttons)
     )
     
-async def _(client, message):
     buttons = BTN.START(message)
     msg = MSG.START(message)
     x = await message.reply_sticker("CAACAgIAAyEGAASTgqFxAAEROsloRaEte6mVPj7KKISLhN7xTFQSWgACexwAAujVUElQ2GCEYrp9wR4E")
