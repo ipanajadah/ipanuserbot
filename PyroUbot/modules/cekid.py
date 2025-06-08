@@ -95,7 +95,7 @@ async def generate_profile_card(client: Client, user: User):
 
     return final_path
 
-@PY.UBOT("id|cekid")
+@PY.UBOT("cekid")
 async def cekidte(client, message):
     user = message.from_user
     target_user = user
