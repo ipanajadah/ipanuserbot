@@ -47,11 +47,17 @@ async def _(client, message):
     buttons = BTN.START(message)
     msg = MSG.START(message)
 
-    await message.reply_photo
-        photo="https://files.catbox.moe/0k8f7l.jpg", 
-        caption=msg, 
-        reply_markup=InlineKeyboardMarkup(buttons)
-        
+    buttons = BTN.START(message)
+         msg = MSG.START(message)
+        photo_url = "https://files.catbox.moe/0k8f7l.jpg"
+
+        try:
+            return await msg.reply_photo(
+                photo=photo_url,
+                caption=msg,
+                reply_markup=InlineKeyboardMarkup(buttons)
+            )       
+            
     return await message.reply(msg, reply_markup=InlineKeyboardMarkup(buttons))
 
 
