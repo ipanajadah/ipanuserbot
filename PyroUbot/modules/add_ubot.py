@@ -14,11 +14,11 @@ from PyroUbot import *
 @PY.START
 @PY.PRIVATE
 async def _(client, message):
+    buttons = BTN.START(message)
     msg = MSG.START(message)
 
     await message.reply_audio(
         audio="https://files.catbox.moe/b54u1l.mp4", 
-        caption=msg,
     )
 
 
