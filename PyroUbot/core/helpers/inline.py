@@ -142,6 +142,11 @@ class BTN:
                     InlineKeyboardButton("ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ", callback_data="buat_ubot"),
                     InlineKeyboardButton("ʟɪᴀᴛ ᴠɪᴛᴜʀ", callback_data="help_back")
                 ],
+                [
+                 InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="t.me/kaijensupport"), 
+                 InlineKeyboardButton("ᴛʜᴇ ᴛᴇᴀᴍ 1 1 1", url="t.me/abautme111"),
+                ],
+                [
                 [InlineKeyboardButton("ᴛʀɪᴀʟ ᴜsᴇʀʙᴏᴛ", callback_data="trial_ubot")]
             ]
         else:
