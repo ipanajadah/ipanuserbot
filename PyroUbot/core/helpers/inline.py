@@ -147,7 +147,7 @@ class BTN:
         else:
             button = [
                 [
-                 InlineKeyboardButton("ʙᴇʟɪ ᴜsᴇʀʙᴏᴛ", callback_data="bahan"),
+                 InlineKeyboardButton("ᴍᴜʟᴀɪ ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ", callback_data="bahan"),
                  InlineKeyboardButton("ɪɴғᴏʀᴍᴀsɪ ᴛᴇɴᴛᴀɴɢ ʙᴏᴛ", callback_data="informasi_ubot")
                 ],
                 [
