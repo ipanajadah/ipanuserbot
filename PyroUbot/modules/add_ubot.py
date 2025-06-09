@@ -16,6 +16,7 @@ from PyroUbot import *
 async def _(client, message): 
     buttons = BTN.START(message)
     msg = MSG.START(message)
+    photo="https://files.catbox.moe/1b37zw.jpg"
     x = await message.reply_sticker("CAACAgIAAyEGAASTgqFxAAEROsloRaEte6mVPj7KKISLhN7xTFQSWgACexwAAujVUElQ2GCEYrp9wR4E")
     await asyncio.sleep(3.5)
     await x.delete()
@@ -43,10 +44,7 @@ async def _(client, message):
     xxx = await message.reply_sticker("CAACAgUAAxkDAAJJAWhC0UgVeOpk9uRsLK1ZlZHzFfRgAAKLBgAC9v0pVoJkidE43EKFHgQ")
     await asyncio.sleep(3.5)
     await xxx.delete()
-
-    return await message.reply_photo(
-        photo="https://files.catbox.moe/1b37zw.jpg", 
-            
+      
     return await message.reply_photo(msg, reply_markup=InlineKeyboardMarkup(buttons))
 
 
