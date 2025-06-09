@@ -44,7 +44,7 @@ async def _(client, message):
     await asyncio.sleep(3.5)
     await xxx.delete()
 
-     photo="https://files.catbox.moe/1b37zw.jpg"
+     photo="https://files.catbox.moe/1b37zw.jpg",
     
     return await message.reply_photo(msg, reply_photo_markup=InlineKeyboardMarkup(buttons))
 
