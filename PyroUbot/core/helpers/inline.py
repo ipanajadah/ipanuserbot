@@ -151,8 +151,8 @@ class BTN:
                  InlineKeyboardButton("ɪɴғᴏʀᴍᴀsɪ ᴛᴇɴᴛᴀɴɢ ʙᴏᴛ", callback_data="informasi_ubot")
                 ],
                 [
-                    InlineKeyboardButton("✨ᴜᴘᴅᴀᴛᴇ", callback_data="cb_gitpull"),
-                    InlineKeyboardButton("🔄 ʀᴇsᴛᴀʀᴛ", callback_data="cb_restart")
+                    InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ", callback_data="cb_gitpull"),
+                    InlineKeyboardButton("ʀᴇsᴛᴀʀᴛ", callback_data="cb_restart")
                 ],
                 [
                     InlineKeyboardButton("ʟɪsᴛ ᴜsᴇʀ", callback_data="cek_ubot"),
