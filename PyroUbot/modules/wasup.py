@@ -9,7 +9,7 @@ async def free_trial_callback(client, callback_query):
     # Cek apakah user sudah pernah mendapat premium gratis
     free_users = await get_list_from_vars(client.me.id, "CEKID_USER_bot")
     if user_id in free_users:
-        return await callback_query.answer("❏ ɪɴғᴏʀᴍᴀᴛɪᴏɴ\n├ ᴏᴡɴᴇʀ : @durov1221\n├ ᴏᴡɴᴇʀ : @kaijenforyou\n├ sᴜᴘᴘᴏʀᴛ : @kaijensupport\n├ ᴜsᴇʀʙᴏᴛ 1 : @Jefriiiiiajaahhh_bot\n├ ᴜsᴇʀʙᴏᴛ 2 : @kaizentest_ubot\n╰ ᴜsᴇʀʙᴏᴛ 3 : @Jefriiiajahpremx_bot\n", show_alert=True)
+        return await callback_query.answer("mohon menung gua akan send txt informasi tetang gua", show_alert=True)
 
     # Tambahkan 1 hari premium
     now = datetime.now(timezone("Asia/Jakarta"))
@@ -20,7 +20,7 @@ async def free_trial_callback(client, callback_query):
     await add_to_vars(client.me.id, "FREE_PREM_USERS", user_id)
 
     # Kirim pesan ke user dengan status free trial
-    await callback_query.answer("mohon mening gua bot akan send txt sendiri", show_alert=True)
+    await callback_query.answer("mohon menung gua akan send txt informasi tetang gua", show_alert=True)
     
     # Kirim pesan dengan tombol inline    
     await bot.send_message(
