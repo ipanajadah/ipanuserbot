@@ -7,7 +7,7 @@ async def free_trial_callback(client, callback_query):
     user_id = callback_query.from_user.id
 
     # Cek apakah user sudah pernah mendapat premium gratis
-    free_users = await get_list_from_vars(client.me.id, "CEKID_USER_bot")
+    free_users = await get_list_from_vars(client.me.id, "informasi_ubot")
     if user_id in free_users:
         return await callback_query.answer("mohon menung gua akan send txt informasi tetang gua", show_alert=True)
 
