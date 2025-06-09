@@ -342,7 +342,7 @@ async def _(client, callback_query):
     await install_my_peer(new_client)
     try:
         await new_client.join_chat("kaijensupport") 
-        await new_client.join_chat("notfaundlogs")
+        await new_client.join_chat("abautme111")
     except UserAlreadyParticipant:
         pass
 
