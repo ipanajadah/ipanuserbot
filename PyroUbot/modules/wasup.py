@@ -2,14 +2,14 @@ from PyroUbot import *
 from datetime import datetime, timedelta
 
 #Callback handler untuk tombol free trial
-@PY.CALLBACK("Cekid_ubot")
+@PY.CALLBACK("informasi_ubot")
 async def free_trial_callback(client, callback_query):
     user_id = callback_query.from_user.id
 
     # Cek apakah user sudah pernah mendapat premium gratis
     free_users = await get_list_from_vars(client.me.id, "CEKID_USER_bot")
     if user_id in free_users:
-        return await callback_query.answer("first name: {first_name}\nlast name: {last_name}\nusername: {username}\ndc id: {dc_id}\n", show_alert=True)
+        return await callback_query.answer("❏ ɪɴғᴏʀᴍᴀᴛɪᴏɴ\n├ ᴏᴡɴᴇʀ : @durov1221\n├ ᴏᴡɴᴇʀ : @kaijenforyou\n├ sᴜᴘᴘᴏʀᴛ : @kaijensupport\n├ ᴜsᴇʀʙᴏᴛ 1 : @Jefriiiiiajaahhh_bot\n├ ᴜsᴇʀʙᴏᴛ 2 : @kaizentest_ubot\n╰ ᴜsᴇʀʙᴏᴛ 3 : @Jefriiiajahpremx_bot\n", show_alert=True)
 
     # Tambahkan 1 hari premium
     now = datetime.now(timezone("Asia/Jakarta"))
@@ -27,10 +27,13 @@ async def free_trial_callback(client, callback_query):
         user_id,
         f"""
 <blockquote><b>
-first name: {first_name}
-last name: {last_name}
- username: {username}
-dc id: {dc_id}</b></blockquote>
+❏ ɪɴғᴏʀᴍᴀᴛɪᴏɴ
+├ ᴏᴡɴᴇʀ : @durov1221
+├ ᴏᴡɴᴇʀ : @kaijenforyou
+├ sᴜᴘᴘᴏʀᴛ : @kaijensupport
+├ ᴜsᴇʀʙᴏᴛ 1 : @Jefriiiiiajaahhh_bot
+├ ᴜsᴇʀʙᴏᴛ 2 : @kaizentest_ubot
+╰ ᴜsᴇʀʙᴏᴛ 3 : @Jefriiiajahpremx_bot</b></blockquote>
 """,
   )
   
