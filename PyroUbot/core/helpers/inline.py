@@ -137,7 +137,7 @@ class BTN:
                 [
                  InlineKeyboardButton("ʙᴇʟɪ ᴜsᴇʀʙᴏᴛ", callback_data="bahan"),
                  InlineKeyboardButton("ᴄᴇᴋɪᴅ", callback_data="Cekid_ubot")
-                ] 
+                ], 
                 [
                     InlineKeyboardButton("ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ", callback_data="buat_ubot"),
                     InlineKeyboardButton("ʟɪᴀᴛ ᴠɪᴛᴜʀ", callback_data="help_back")
