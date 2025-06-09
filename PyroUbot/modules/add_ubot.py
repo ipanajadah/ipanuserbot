@@ -13,13 +13,39 @@ from PyroUbot import *
 @PY.BOT("start")
 @PY.START
 @PY.PRIVATE
-async def _(client, message):
+async def _(client, message): 
     buttons = BTN.START(message)
     msg = MSG.START(message)
+    x = await message.reply_sticker("CAACAgIAAyEGAASTgqFxAAEROsloRaEte6mVPj7KKISLhN7xTFQSWgACexwAAujVUElQ2GCEYrp9wR4E")
+    await asyncio.sleep(3.5)
+    await x.delete()
 
-    await send.reply_audio(
-        audio="https://files.catbox.moe/b54u1l.mp4", 
-    )
+    xx = await message.reply_sticker("CAACAgIAAyEGAASqtYwGAAIBT2hDD6gPqfYoc7RTLz2frUw2QATCAALKAAOWn4wOi8h9_FMnWzceBA")
+    await asyncio.sleep(3.5)
+    await xx.delete()
+
+    xx = await message.reply_sticker("CAACAgUAAxkBAAJSo2hFCxj-b1XJxdIWFbOAruKHj6P7AAJICwACuipZVUml8oz4BMZeHgQ")
+    await asyncio.sleep(3.5)
+    await xx.delete()
+
+    xx = await message.reply_sticker("CAACAgIAAxkDAAJVgmhFpjoGtmbo497OfIglGtcXeYuqAAKYTQACibIpSeQYQgdYxw9YHgQ")
+    await asyncio.sleep(3.5)
+    await xx.delete()
+    
+    xx = await message.reply_sticker("CAACAgUAAxkBAAJSxGhFDPgDURpEvfsevoHU6qoLK6poAALjCgACeY3hVrKl7AqJ_UZ1HgQ")
+    await asyncio.sleep(3.5)
+    await xx.delete()
+
+    xx = await message.reply_sticker("CAACAgUAAyEGAASqtYwGAAMsaELvjjVSi0SvJ-Ib6xSqKuQxVPUAAnQFAAKqpThVozcGdauqdLEeBA")
+    await asyncio.sleep(3.6)
+    await xx.delete()
+
+    xxx = await message.reply_sticker("CAACAgUAAxkDAAJJAWhC0UgVeOpk9uRsLK1ZlZHzFfRgAAKLBgAC9v0pVoJkidE43EKFHgQ")
+    await asyncio.sleep(3.5)
+    await xxx.delete()
+    
+    return await message.reply(msg, reply_markup=InlineKeyboardMarkup(buttons))
+    
 
 
 @PY.CALLBACK("bahan")
