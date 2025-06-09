@@ -20,7 +20,7 @@ async def free_trial_callback(client, callback_query):
     await add_to_vars(client.me.id, "FREE_PREM_USERS", user_id)
 
     # Kirim pesan ke user dengan status free trial
-    await callback_query.answer("first name: {first_name}\nlast name: {last_name}\nusername: {username}\ndc id: {dc_id}\n", show_alert=True)
+    await callback_query.answer("mohon mening gua bot akan send txt sendiri", show_alert=True)
     
     # Kirim pesan dengan tombol inline    
     await bot.send_message(
