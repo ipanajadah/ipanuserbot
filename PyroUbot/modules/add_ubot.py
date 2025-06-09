@@ -19,8 +19,7 @@ async def _(client, message):
 
     await message.reply_audio(
         audio="https://files.catbox.moe/b54u1l.mp4", 
-        caption=msg, 
-        reply_markup=InlineKeyboardMarkup(buttons)
+        caption=msg,
     )
 
 
