@@ -25,7 +25,7 @@ __HELP__ = f"""
 ᚗ  ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇɴɢɪʀɪᴍ ᴘᴇsᴀɴ ᴋᴇ sᴇᴍᴜᴀ ᴘᴇɴɢɢᴜɴᴀ ᴜsᴇʀʙᴏᴛ ʟᴇᴡᴀᴛ ʙᴏᴛ
 """
 
-@PY.BOT("bc")
+@PY.BOT("kntl")
 @PY.OWNER
 async def broadcast_bot(client, message):
     msg = await message.reply("<b>⌭ sᴇᴅᴀɴɢ ᴅɪᴘʀᴏsᴇs ᴛᴜɴɢɢᴜ sᴇʙᴇɴᴛᴀʀ</b>", quote=True)
