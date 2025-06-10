@@ -136,14 +136,13 @@ class BTN:
             button = [
                 [
                  InlineKeyboardButton("ʙᴇʟɪ ᴜsᴇʀʙᴏᴛ", callback_data="bahan"),
-                 InlineKeyboardButton("ɪɴғᴏʀᴍᴀsɪ ᴛᴇɴᴛᴀɴɢ ʙᴏᴛ", callback_data="informasi_ubot")
                 ], 
                 [
                     InlineKeyboardButton("ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ", callback_data="buat_ubot"),
                     InlineKeyboardButton("ʟɪᴀᴛ ᴠɪᴛᴜʀ", callback_data="help_back")
                 ],
                 [
-                 InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="t.me/kaijensupport"), 
+                 InlineKeyboardButton("ɪɴғᴏʀᴍᴀsɪ ᴛᴇɴᴛᴀɴɢ ʙᴏᴛ", callback_data="informasi_ubot"),
                 ],
                 [InlineKeyboardButton("ᴛʀɪᴀʟ ᴜsᴇʀʙᴏᴛ", callback_data="trial_ubot")]
             ]
