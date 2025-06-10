@@ -219,7 +219,7 @@ async def _(client, message):
     return await message.reply(_gcs)
 
 
-@PY.BOT("bcbot")
+@PY.BOT("broadcast|bacot|bcast|bc|cfd")
 @PY.ADMIN
 async def _(client, message):
     msg = await message.reply("<blockquote><b>⌭ okee proses...</blockquote></b>\n\n<blockquote><b>⌭ mohon bersabar untuk menunggu proses broadcast sampai selesai</blockquote></b>", quote=True)
