@@ -21,8 +21,9 @@ Perintah:
 # Konfigurasi Cloudflare (Tambahkan daftar domain dengan Zone ID)
 CLOUDFLARE_API_TOKEN = "auQMrkPsYbpFO29HwHMEVzNvkY_nLNlR3vPW6Y7Y"
 DOMAIN_LIST = {
-    "digitalatelier.tech": "1932711fb1d4d86b1f53b00d1b275f8a",
-    "mydigital-store.me": "11c1abb8f727bf4d7342f1cade2b3cd7"
+    "digitalatelier.tech":"1932711fb1d4d86b1f53b00d1b275f8a",
+    "mydigital-store.me":"11c1abb8f727bf4d7342f1cade2b3cd7",
+    "kaizen.store.com":  "18p1abb8f727bf4d7342f1cade2b3cd7"
 }
 
 # Fungsi untuk menambahkan subdomain ke Cloudflare
