@@ -49,7 +49,6 @@ async def _(client, message):
     # Menambahkan foto sebelum teks akhir
     await message.reply_photo(
         photo="https://files.catbox.moe/vor7ew.jpg",  # Ganti dengan URL foto atau file ID
-        caption="✨ Welcome! saya adalah userbot multi client"
     )
 
     return await message.reply(msg, reply_markup=InlineKeyboardMarkup(buttons))
