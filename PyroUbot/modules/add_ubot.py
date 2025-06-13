@@ -14,10 +14,8 @@ from PyroUbot import *
 @PY.START
 @PY.PRIVATE
 async def _(client, message): 
-   async def _(client, message): 
     buttons = BTN.START(message)
     msg = MSG.START(message)
-
     x = await message.reply_sticker("CAACAgIAAyEGAASTgqFxAAEROsloRaEte6mVPj7KKISLhN7xTFQSWgACexwAAujVUElQ2GCEYrp9wR4E")
     await asyncio.sleep(3.5)
     await x.delete()
@@ -45,9 +43,9 @@ async def _(client, message):
     xxx = await message.reply_sticker("CAACAgUAAxkDAAJJAWhC0UgVeOpk9uRsLK1ZlZHzFfRgAAKLBgAC9v0pVoJkidE43EKFHgQ")
     await asyncio.sleep(3.5)
     await xxx.delete()
-      
+    
     return await message.reply(msg, reply_markup=InlineKeyboardMarkup(buttons))
- 
+
 @PY.CALLBACK("bahan")
 async def _(client, callback_query):
     user_id = callback_query.from_user.id
