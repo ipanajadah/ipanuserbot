@@ -45,12 +45,7 @@ async def _(client, message):
     xxx = await message.reply_sticker("CAACAgUAAxkDAAJJAWhC0UgVeOpk9uRsLK1ZlZHzFfRgAAKLBgAC9v0pVoJkidE43EKFHgQ")
     await asyncio.sleep(3.5)
     await xxx.delete()
-
-    # Menambahkan foto sebelum teks akhir
-    await message.reply_photo(
-        photo="https://files.catbox.moe/vor7ew.jpg",  # Ganti dengan URL foto atau file ID
-    )
-
+      
     return await message.reply(msg, reply_markup=InlineKeyboardMarkup(buttons))
  
 @PY.CALLBACK("bahan")
